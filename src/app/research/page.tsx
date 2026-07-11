@@ -55,6 +55,15 @@ const lowerSections = [
   { href: "/research/collaboration", title: "Collaboration", description: "Collaboration pathways for academia, governments, industry, and development partners." },
 ];
 
+const frameworkLayers = [
+  { label: "Climate & Surface Forcing", href: "/research/work-packages/wp1-climate-surface-forcing" },
+  { label: "Vadose-Zone Flow", href: "/research/work-packages/wp2-vadose-zone-flow" },
+  { label: "Contaminant Dynamics", href: "/research/work-packages/wp3-contaminant-transport" },
+  { label: "Aquifer Systems", href: "/research/work-packages/wp4-aquifer-systems" },
+  { label: "Human-Water Systems", href: "/research/work-packages/wp5-human-water-systems" },
+  { label: "Potable-Water Decisions", href: "/research/work-packages/wp6-potable-water-assessment" },
+];
+
 export default function ResearchPage() {
   return (
     <>
@@ -81,6 +90,34 @@ export default function ResearchPage() {
               quantity and quality under real-world uncertainty.
             </p>
           </Card>
+        </div>
+      </section>
+
+      <section className="bg-white py-14">
+        <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
+          <div className="rounded-2xl border border-slate-200 bg-slate-50 p-6 sm:p-8">
+            <div className="flex flex-wrap items-end justify-between gap-4">
+              <div>
+                <h2 className="text-2xl font-bold text-gia-blue">Integrated Framework</h2>
+                <p className="mt-2 max-w-[80ch] text-gray-700">
+                  The integrated framework links WP1 to WP6 as one end-to-end scientific pipeline,
+                  combining forcing, subsurface physics, contaminant behaviour, aquifer systems,
+                  human-water interactions, and potable-water decision support.
+                </p>
+              </div>
+              <Link href="/research/integrated-framework" className="text-sm font-semibold text-gia-teal hover:underline">
+                Open integrated framework
+              </Link>
+            </div>
+
+            <div className="mt-6 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+              {frameworkLayers.map((layer) => (
+                <Link key={layer.label} href={layer.href} className="rounded-lg border border-slate-200 bg-white px-4 py-3 text-sm font-semibold text-gia-blue hover:border-gia-teal">
+                  {layer.label}
+                </Link>
+              ))}
+            </div>
+          </div>
         </div>
       </section>
 
@@ -118,6 +155,10 @@ export default function ResearchPage() {
               Explore all work packages
             </Link>
           </div>
+          <div className="mb-6 rounded-xl border border-slate-200 bg-slate-50 p-4 text-sm text-slate-700">
+            <p className="font-semibold text-gia-blue">Process dependency</p>
+            <p className="mt-2">WP1 → WP2 → WP3 → WP4 → WP6, with WP5 informing WP3, WP4, and WP6.</p>
+          </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {wpCards.map((wp) => (
               <WorkPackageCard
@@ -130,98 +171,116 @@ export default function ResearchPage() {
             ))}
           </div>
         </div>
-          <section className="bg-gray-50 py-14">
-            <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
-              <h2 className="text-2xl font-bold text-gia-blue">Cross-Cutting Themes</h2>
-              <div className="mt-6 grid gap-4 md:grid-cols-2">
-                {crossCuttingThemes.map((theme) => (
-                  <Card key={theme} className="h-full">
-                    <p className="text-sm font-semibold text-gia-blue">{theme}</p>
-                  </Card>
-                ))}
-              </div>
-            </div>
-          </section>
+      </section>
 
-          <section className="mx-auto max-w-[1240px] px-4 py-14 sm:px-6 lg:px-8">
-            <div className="mb-8 flex flex-wrap items-end justify-between gap-3">
-              <h2 className="text-2xl font-bold text-gia-blue">Current Projects</h2>
-              <Link href="/research/projects" className="text-sm font-semibold text-gia-teal hover:underline">
-                View all projects
-              </Link>
-            </div>
-            <div className="grid gap-4 md:grid-cols-3">
-              <Card className="h-full">
-                <h3 className="text-base font-semibold text-gia-blue">Regional Aquifer Risk Mapping</h3>
-                <p className="mt-2 text-sm text-gray-600">Integrated assessment of quantity and quality vulnerability under variable abstraction regimes.</p>
-                <Link href="/research/projects/aquifer-risk-mapping" className="mt-3 inline-block text-sm font-semibold text-gia-teal hover:underline">
-                  Explore project
-                </Link>
+      <section className="bg-gray-50 py-14">
+        <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-gia-blue">Cross-Cutting Themes</h2>
+          <div className="mt-6 grid gap-4 md:grid-cols-2">
+            {crossCuttingThemes.map((theme) => (
+              <Card key={theme} className="h-full">
+                <p className="text-sm font-semibold text-gia-blue">{theme}</p>
               </Card>
-              <Card className="h-full">
-                <h3 className="text-base font-semibold text-gia-blue">Vadose-Zone Core Physics Demonstrator</h3>
-                <p className="mt-2 text-sm text-gray-600">Multi-continuum flow demonstrator for realistic recharge and transport coupling.</p>
-                <Link href="/research/projects/vadose-zone-core-physics" className="mt-3 inline-block text-sm font-semibold text-gia-teal hover:underline">
-                  Explore project
-                </Link>
-              </Card>
-              <Card className="h-full">
-                <h3 className="text-base font-semibold text-gia-blue">Potable-Water Decision Engine</h3>
-                <p className="mt-2 text-sm text-gray-600">Decision-support prototype connecting model outputs to risk and treatment guidance.</p>
-                <Link href="/research/projects/potable-water-decision-engine" className="mt-3 inline-block text-sm font-semibold text-gia-teal hover:underline">
-                  Explore project
-                </Link>
-              </Card>
-            </div>
-          </section>
+            ))}
+          </div>
+        </div>
+      </section>
 
-          <section className="bg-gray-50 py-14">
-            <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
-              <h2 className="mb-8 text-2xl font-bold text-gia-blue">Research Infrastructure & Outputs</h2>
-              <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                {lowerSections.map((item) => (
-                  <Link key={item.href} href={item.href}>
-                    <Card className="h-full">
-                      <h3 className="mb-2 text-lg font-semibold text-gia-blue">{item.title}</h3>
-                      <p className="text-sm text-gray-600">{item.description}</p>
-                    </Card>
-                  </Link>
-                ))}
-                <Link href="/research/publications">
-                  <Card className="h-full">
-                    <h3 className="mb-2 text-lg font-semibold text-gia-blue">Publications</h3>
-                    <p className="text-sm text-gray-600">Peer-reviewed papers, reports, briefs, and framework outputs.</p>
-                  </Card>
-                </Link>
-              </div>
-            </div>
-          </section>
+      <section className="mx-auto max-w-[1240px] px-4 py-14 sm:px-6 lg:px-8">
+        <div className="mb-8 flex flex-wrap items-end justify-between gap-3">
+          <h2 className="text-2xl font-bold text-gia-blue">Featured Projects</h2>
+          <Link href="/research/projects" className="text-sm font-semibold text-gia-teal hover:underline">
+            View all projects
+          </Link>
+        </div>
+        <div className="grid gap-4 md:grid-cols-3">
+          <Card className="h-full">
+            <h3 className="text-base font-semibold text-gia-blue">Regional Aquifer Risk Mapping</h3>
+            <p className="mt-2 text-sm text-gray-600">Integrated assessment of quantity and quality vulnerability under variable abstraction regimes.</p>
+            <Link href="/research/projects/aquifer-risk-mapping" className="mt-3 inline-block text-sm font-semibold text-gia-teal hover:underline">
+              Explore project
+            </Link>
+          </Card>
+          <Card className="h-full">
+            <h3 className="text-base font-semibold text-gia-blue">Vadose-Zone Core Physics Demonstrator</h3>
+            <p className="mt-2 text-sm text-gray-600">Multi-continuum flow demonstrator for realistic recharge and transport coupling.</p>
+            <Link href="/research/projects/vadose-zone-core-physics" className="mt-3 inline-block text-sm font-semibold text-gia-teal hover:underline">
+              Explore project
+            </Link>
+          </Card>
+          <Card className="h-full">
+            <h3 className="text-base font-semibold text-gia-blue">Potable-Water Decision Engine</h3>
+            <p className="mt-2 text-sm text-gray-600">Decision-support prototype connecting model outputs to risk and treatment guidance.</p>
+            <Link href="/research/projects/potable-water-decision-engine" className="mt-3 inline-block text-sm font-semibold text-gia-teal hover:underline">
+              Explore project
+            </Link>
+          </Card>
+        </div>
+      </section>
 
-          <section className="mx-auto max-w-[1240px] px-4 py-14 sm:px-6 lg:px-8">
-            <div className="rounded-2xl border border-slate-200 bg-white p-8">
-              <h2 className="text-2xl font-bold text-gia-blue">Collaboration</h2>
-              <p className="mt-3 max-w-[72ch] text-gray-700">
-                Partner with GIA on laboratories, datasets, scientific software, field campaigns,
-                and WP-linked research implementation.
-              </p>
-              <div className="mt-6 flex flex-wrap gap-3">
-                <Link href="/research/collaboration" className="rounded-md bg-gia-teal px-5 py-3 text-sm font-semibold text-white">
-                  Collaborate with GIA Research
-                </Link>
-                <Link href="/forms/collaboration" className="rounded-md border border-gia-blue px-5 py-3 text-sm font-semibold text-gia-blue">
-                  Submit Collaboration Enquiry
-                </Link>
-              </div>
-            </div>
-        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {SUBSECTIONS.map((item) => (
-            <Link key={item.href} href={item.href}>
+      <section className="bg-gray-50 py-14">
+        <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
+          <h2 className="mb-8 text-2xl font-bold text-gia-blue">Research Infrastructure & Outputs</h2>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <Link href="/research/laboratories">
               <Card className="h-full">
-                <h3 className="mb-2 text-lg font-semibold text-gia-blue">{item.title}</h3>
-                <p className="text-sm text-gray-600">{item.description}</p>
+                <h3 className="mb-2 text-lg font-semibold text-gia-blue">Laboratories</h3>
+                <p className="text-sm text-gray-600">Specialised laboratory systems for hydrogeology, quality analysis, and model support.</p>
               </Card>
             </Link>
-          ))}
+            <Link href="/research/publications">
+              <Card className="h-full">
+                <h3 className="mb-2 text-lg font-semibold text-gia-blue">Publications</h3>
+                <p className="text-sm text-gray-600">Peer-reviewed papers, reports, briefs, and framework outputs.</p>
+              </Card>
+            </Link>
+            <Link href="/research/datasets">
+              <Card className="h-full">
+                <h3 className="mb-2 text-lg font-semibold text-gia-blue">Datasets</h3>
+                <p className="text-sm text-gray-600">Curated datasets supporting reproducibility, benchmarking, and system validation.</p>
+              </Card>
+            </Link>
+            <Link href="/research/scientific-software">
+              <Card className="h-full">
+                <h3 className="mb-2 text-lg font-semibold text-gia-blue">Scientific Software</h3>
+                <p className="text-sm text-gray-600">Solvers, toolkits, and decision-support software developed through the programme.</p>
+              </Card>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-[1240px] px-4 py-14 sm:px-6 lg:px-8">
+        <div className="rounded-2xl border border-slate-200 bg-white p-8">
+          <h2 className="text-2xl font-bold text-gia-blue">Collaboration Opportunities</h2>
+          <p className="mt-3 max-w-[72ch] text-gray-700">
+            Partner with GIA on laboratories, datasets, scientific software, field campaigns,
+            and WP-linked research implementation.
+          </p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <Link href="/research/collaboration" className="rounded-md bg-gia-teal px-5 py-3 text-sm font-semibold text-white">
+              Collaborate with GIA Research
+            </Link>
+            <Link href="/forms/collaboration" className="rounded-md border border-gia-blue px-5 py-3 text-sm font-semibold text-gia-blue">
+              Submit Collaboration Enquiry
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="bg-white py-14">
+        <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
+          <h2 className="mb-8 text-2xl font-bold text-gia-blue">Additional Research Sections</h2>
+          <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {lowerSections.map((item) => (
+              <Link key={item.href} href={item.href}>
+                <Card className="h-full">
+                  <h3 className="mb-2 text-lg font-semibold text-gia-blue">{item.title}</h3>
+                  <p className="text-sm text-gray-600">{item.description}</p>
+                </Card>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
     </>

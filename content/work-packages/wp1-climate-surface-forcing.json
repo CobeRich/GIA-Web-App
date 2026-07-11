@@ -9,6 +9,55 @@
     "How do climate variability and event dynamics shape groundwater-relevant forcing?",
     "How should forcing uncertainty be propagated into subsurface simulations?"
   ],
+  "specialSections": [
+    {
+      "title": "Forcing Variables",
+      "bullets": [
+        "Precipitation",
+        "Temperature",
+        "Humidity",
+        "Wind",
+        "Radiation",
+        "Pressure"
+      ]
+    },
+    {
+      "title": "Rainfall Development Ladder",
+      "bullets": [
+        "Homogeneous rainfall",
+        "Multi-class rainfall",
+        "Temporal variation",
+        "Spatial variation",
+        "Space-time variation",
+        "Event-driven forcing",
+        "Stochastic forcing"
+      ]
+    },
+    {
+      "title": "Temporal Variation",
+      "body": "Resolve seasonal, sub-seasonal, and extreme-event timing effects on infiltration and recharge pulses."
+    },
+    {
+      "title": "Spatial Variation",
+      "body": "Represent heterogeneity in rainfall and land-surface controls across field, catchment, and basin scales."
+    },
+    {
+      "title": "Stochastic Forcing",
+      "body": "Generate uncertainty-aware forcing realizations for stress testing and robust downstream simulation."
+    },
+    {
+      "title": "Land-Use and Surface Conditions",
+      "body": "Account for vegetation, imperviousness, roughness, and soil-cover impacts on runoff-infiltration partitioning."
+    },
+    {
+      "title": "Boundary-Condition Generation",
+      "body": "Create consistent boundary-condition products for WP2-WP6 coupling and scenario replay."
+    },
+    {
+      "title": "Validation Datasets",
+      "body": "Validate forcing products against station networks, remote-sensing retrievals, and curated benchmark archives."
+    }
+  ],
   "tasks": [
     {
       "title": "Forcing Data Curation",

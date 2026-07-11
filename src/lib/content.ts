@@ -7,8 +7,16 @@
  * updating this file. See docs/payload-migration.md.
  */
 import {
+  readDatasets,
   readEvents,
+  readFieldSites,
   readKnowledgeResources,
+  readLaboratories,
+  readModulesCollection,
+  readPeople,
+  readPublications,
+  readResearchProjects,
+  readSoftware,
   readWorkPackages,
   readNews,
   readOpportunities,
@@ -17,14 +25,22 @@ import {
   readTeam,
 } from "../../content";
 import type {
+  DatasetContent,
   EventItem,
+  FieldSiteContent,
   KnowledgeResource,
   KnowledgeResourceType,
+  LaboratoryContent,
+  ModuleContent,
   NewsItem,
   Opportunity,
   Partner,
+  PersonContent,
+  PublicationContent,
+  ResearchProjectContent,
   ResearchEntry,
   ResearchEntryType,
+  SoftwareContent,
   TeamCategory,
   TeamMember,
   WorkPackage,
@@ -136,4 +152,80 @@ export function getAllWorkPackages(): WorkPackage[] {
 
 export function getWorkPackageBySlug(slug: string): WorkPackage | undefined {
   return readWorkPackages().find((wp) => wp.slug === slug);
+}
+
+// ---- Modules ----
+export function getAllModules(): ModuleContent[] {
+  return readModulesCollection();
+}
+
+export function getModuleBySlug(slug: string): ModuleContent | undefined {
+  return readModulesCollection().find((moduleItem) => moduleItem.slug === slug);
+}
+
+// ---- Research Projects ----
+export function getAllResearchProjects(): ResearchProjectContent[] {
+  return readResearchProjects();
+}
+
+export function getResearchProjectBySlug(
+  slug: string
+): ResearchProjectContent | undefined {
+  return readResearchProjects().find((project) => project.slug === slug);
+}
+
+// ---- Laboratories ----
+export function getAllLaboratories(): LaboratoryContent[] {
+  return readLaboratories();
+}
+
+export function getLaboratoryBySlug(slug: string): LaboratoryContent | undefined {
+  return readLaboratories().find((laboratory) => laboratory.slug === slug);
+}
+
+// ---- Publications ----
+export function getAllPublications(): PublicationContent[] {
+  return [...readPublications()].sort(byDateDesc);
+}
+
+export function getPublicationBySlug(
+  slug: string
+): PublicationContent | undefined {
+  return readPublications().find((publication) => publication.slug === slug);
+}
+
+// ---- Datasets ----
+export function getAllDatasets(): DatasetContent[] {
+  return readDatasets();
+}
+
+export function getDatasetBySlug(slug: string): DatasetContent | undefined {
+  return readDatasets().find((dataset) => dataset.slug === slug);
+}
+
+// ---- Software ----
+export function getAllSoftware(): SoftwareContent[] {
+  return readSoftware();
+}
+
+export function getSoftwareBySlug(slug: string): SoftwareContent | undefined {
+  return readSoftware().find((software) => software.slug === slug);
+}
+
+// ---- Field Sites ----
+export function getAllFieldSites(): FieldSiteContent[] {
+  return readFieldSites();
+}
+
+export function getFieldSiteBySlug(slug: string): FieldSiteContent | undefined {
+  return readFieldSites().find((fieldSite) => fieldSite.slug === slug);
+}
+
+// ---- People ----
+export function getAllPeople(): PersonContent[] {
+  return readPeople();
+}
+
+export function getPersonBySlug(slug: string): PersonContent | undefined {
+  return readPeople().find((person) => person.slug === slug);
 }

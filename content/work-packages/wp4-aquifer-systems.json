@@ -9,6 +9,40 @@
     "How does heterogeneity affect regional storage and flow behavior?",
     "How can aquifer vulnerability be mapped under coupled quantity-quality stressors?"
   ],
+  "specialSections": [
+    {
+      "title": "Aquifer Conceptual Model",
+      "body": "Define hydrostratigraphic architecture, boundaries, and connectivity for regional simulation."
+    },
+    {
+      "title": "Recharge Coupling",
+      "body": "Assimilate WP2 recharge signals into aquifer state evolution."
+    },
+    {
+      "title": "Groundwater Storage",
+      "body": "Estimate transient storage changes under climatic and anthropogenic pressures."
+    },
+    {
+      "title": "Pumping",
+      "body": "Represent abstraction stresses and drawdown responses across management scenarios."
+    },
+    {
+      "title": "Mixing",
+      "body": "Quantify dilution and mixing pathways affecting aquifer quality patterns."
+    },
+    {
+      "title": "Travel Time",
+      "body": "Compute travel-time distributions relevant to exposure and risk horizons."
+    },
+    {
+      "title": "Vulnerability",
+      "body": "Derive vulnerability indicators for prioritizing aquifer protection and intervention."
+    },
+    {
+      "title": "Regional Scaling",
+      "body": "Scale local process fidelity to basin and regional planning contexts."
+    }
+  ],
   "tasks": [
     {
       "title": "Aquifer Conceptual Model",

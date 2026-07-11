@@ -9,6 +9,40 @@
     "How do abstraction and infrastructure systems modify subsurface quantity and quality trajectories?",
     "Which policy interventions reduce potable-water risk across scenarios?"
   ],
+  "specialSections": [
+    {
+      "title": "Abstraction",
+      "body": "Characterize withdrawal intensity, distribution, and timing across sectors."
+    },
+    {
+      "title": "Demand",
+      "body": "Represent domestic, agricultural, and industrial demand trajectories under uncertainty."
+    },
+    {
+      "title": "Sewer and Pipeline Leakage",
+      "body": "Capture leakage pathways that alter recharge and contamination conditions."
+    },
+    {
+      "title": "Mining and Industry",
+      "body": "Model extraction and industrial activity impacts on groundwater quantity and quality."
+    },
+    {
+      "title": "Irrigation Return Flow",
+      "body": "Estimate delayed return-flow contributions and pollutant transport effects."
+    },
+    {
+      "title": "Engineered Recharge",
+      "body": "Assess managed aquifer recharge interventions for resilience and recovery."
+    },
+    {
+      "title": "Feedback Mechanisms",
+      "body": "Model two-way socio-hydrological feedbacks between behavior, infrastructure, and aquifer response."
+    },
+    {
+      "title": "Governance Scenarios",
+      "body": "Translate regulation and policy levers into scenario constraints and outcomes."
+    }
+  ],
   "tasks": [
     {
       "title": "Demand and Abstraction Modelling",

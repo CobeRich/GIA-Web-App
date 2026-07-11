@@ -9,6 +9,41 @@
     "Which pathways dominate contaminant transfer under coupled flow regimes?",
     "How do reactions and retardation alter risk-relevant concentration patterns?"
   ],
+  "specialSections": [
+    {
+      "title": "Source Categories",
+      "bullets": [
+        "Natural sources",
+        "Agricultural sources",
+        "Domestic and sanitation sources",
+        "Industrial and legacy sources"
+      ]
+    },
+    {
+      "title": "ADE Processes",
+      "body": "Resolve advection, dispersion, and diffusion dynamics under heterogeneous flow fields."
+    },
+    {
+      "title": "Reactive Transport",
+      "body": "Model reaction pathways that transform concentration, toxicity, and persistence."
+    },
+    {
+      "title": "Degradation and Sorption",
+      "body": "Represent degradation kinetics, sorption-retardation, and geochemical attenuation effects."
+    },
+    {
+      "title": "Multi-Continuum Transport",
+      "body": "Track contaminant migration and exchange across matrix, macropore, and fracture continua."
+    },
+    {
+      "title": "Source Scenarios",
+      "body": "Evaluate transient and event-driven contaminant loading scenarios."
+    },
+    {
+      "title": "Water-Quality Outputs",
+      "body": "Produce quality indicators and contaminant-risk products for aquifer and decision modules."
+    }
+  ],
   "tasks": [
     {
       "title": "Source Characterization",

@@ -138,6 +138,12 @@ export interface Milestone {
   target: string;
 }
 
+export interface WorkPackageSpecialSection {
+  title: string;
+  body?: string;
+  bullets?: string[];
+}
+
 export interface WorkPackage {
   slug: string;
   code: "WP1" | "WP2" | "WP3" | "WP4" | "WP5" | "WP6";
@@ -146,6 +152,7 @@ export interface WorkPackage {
   stage: string;
   objective: string;
   questions: string[];
+  specialSections?: WorkPackageSpecialSection[];
   tasks: WorkPackageTask[];
   inputs: RelatedLink[];
   outputs: RelatedLink[];

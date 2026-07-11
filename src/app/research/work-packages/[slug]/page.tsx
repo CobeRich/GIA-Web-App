@@ -39,12 +39,19 @@ export default async function WorkPackageSlugPage({ params }: WorkPackagePagePar
 
   if (!wp) notFound();
 
+  const specialSections = (wp.specialSections ?? []).map((section) => ({
+    title: section.title,
+    body: section.body,
+    bullets: section.bullets,
+  }));
+
   const sections = [
     { title: "Objective", body: wp.objective },
     {
       title: "Scientific Questions",
       bullets: wp.questions,
     },
+    ...specialSections,
     {
       title: "Tasks",
       bullets: wp.tasks.map((task) => `${task.title} (${task.stage}): ${task.summary}`),

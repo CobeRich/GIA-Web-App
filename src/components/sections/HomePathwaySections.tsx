@@ -241,21 +241,27 @@ export function PlatformDemonstration() {
         <div className="rounded-2xl border border-white/15 bg-[#0d365f] p-6 shadow-xl">
           <div className="grid grid-cols-2 gap-4 text-sm">
             <div className="rounded-lg bg-[#07203a] p-4">
-              <p className="text-slate-300">Water Level</p>
-              <p className="mt-1 text-2xl font-bold">12.45 m</p>
+              <p className="text-slate-300">Demo aquifer level</p>
+              <p className="mt-1 text-2xl font-bold">Sample profile</p>
             </div>
             <div className="rounded-lg bg-[#07203a] p-4">
-              <p className="text-slate-300">Recharge Trend</p>
-              <p className="mt-1 text-2xl font-bold">+78%</p>
+              <p className="text-slate-300">Simulated recharge trend</p>
+              <p className="mt-1 text-2xl font-bold">Scenario curve</p>
             </div>
             <div className="rounded-lg bg-[#07203a] p-4">
-              <p className="text-slate-300">Active Sensors</p>
-              <p className="mt-1 text-2xl font-bold">124</p>
+              <p className="text-slate-300">Example sensor network</p>
+              <p className="mt-1 text-2xl font-bold">Demo nodes</p>
             </div>
             <div className="rounded-lg bg-[#07203a] p-4">
-              <p className="text-slate-300">Risk Level</p>
-              <p className="mt-1 text-2xl font-bold text-amber-300">Moderate</p>
+              <p className="text-slate-300">Illustrative risk classification</p>
+              <p className="mt-1 text-2xl font-bold text-amber-300">Preview state</p>
             </div>
+          </div>
+          <div className="mt-4 grid gap-2 text-xs text-cyan-100/90 sm:grid-cols-2">
+            <p><span className="font-semibold">Prototype:</span> interface concept</p>
+            <p><span className="font-semibold">Demonstration data:</span> illustrative values</p>
+            <p><span className="font-semibold">Research preview:</span> scenario outputs</p>
+            <p><span className="font-semibold">Operational service:</span> not shown on home demo</p>
           </div>
           <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-cyan-100/90">
             Illustrative prototype data
@@ -296,7 +302,7 @@ export function InnovationImpactTiles() {
   const tiles = [
     { title: "Policy Support", href: "/innovation/government-policy" },
     { title: "Industry Solutions", href: "/innovation/industry" },
-    { title: "Open-Source Software", href: assetPaths.docTemplate },
+    { title: "Open-Source Software", href: "/research/scientific-software" },
     { title: "Student Innovation", href: "/innovation/startups" },
   ];
 

@@ -9,6 +9,40 @@
     "How do matrix, macropore, and fracture continua exchange water under transient forcing?",
     "Where are non-Darcian terms required for reliable event-scale predictions?"
   ],
+  "specialSections": [
+    {
+      "title": "Matrix, Macropore, and Fracture Continua",
+      "body": "Represent coexisting flow pathways and exchange among porous matrix, preferential macropores, and fractures."
+    },
+    {
+      "title": "Richards Equation",
+      "body": "Use Richards-based formulations for unsaturated-zone storage and pressure-head dynamics."
+    },
+    {
+      "title": "Non-Darcian Dynamics",
+      "body": "Include threshold and preferential-flow behavior where Darcy assumptions are not sufficient."
+    },
+    {
+      "title": "Volume Averaging",
+      "body": "Bridge pore- to continuum-scale behavior with stable upscaling methods."
+    },
+    {
+      "title": "Continuum Exchange",
+      "body": "Parameterize transient exchange terms among matrix, macropore, and fracture continua."
+    },
+    {
+      "title": "Preferential Flow",
+      "body": "Capture event-driven bypass and rapid infiltration pathways."
+    },
+    {
+      "title": "Recharge",
+      "body": "Estimate dynamic recharge products and uncertainty bounds for aquifer coupling."
+    },
+    {
+      "title": "Benchmark Models",
+      "body": "Verify model behavior against synthetic and observed benchmark scenarios."
+    }
+  ],
   "tasks": [
     {
       "title": "Equation Formulation",

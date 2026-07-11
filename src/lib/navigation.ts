@@ -106,7 +106,6 @@ export const primaryNav: NavItem[] = [
       { label: "Events", href: "/events" },
       { label: "Publications", href: "/knowledge-hub/publications" },
       { label: "Technical Reports", href: "/knowledge-hub/reports" },
-      { label: "Reports", href: "/knowledge-hub/reports" },
       { label: "Policy Briefs", href: "/knowledge-hub/policy-briefs" },
       { label: "Educational Resources", href: "/knowledge-hub/educational-resources" },
       { label: "Media Gallery", href: "/knowledge-hub/media-gallery" },

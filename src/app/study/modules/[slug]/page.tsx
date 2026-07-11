@@ -5,6 +5,7 @@ import PageHero from "@/components/ui/PageHero";
 import Card from "@/components/ui/Card";
 import { createMetadata } from "@/lib/metadata";
 import { studyModules } from "@/lib/studyModules";
+import { studyModuleSpecs } from "@/lib/studyModuleSpecs";
 
 export function generateStaticParams() {
   return studyModules.map((moduleItem) => ({ slug: moduleItem.slug }));
@@ -32,6 +33,9 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
 export default function ModuleDetailPage({ params }: { params: { slug: string } }) {
   const moduleItem = studyModules.find((entry) => entry.slug === params.slug);
   if (!moduleItem) notFound();
+
+  const moduleSpec = studyModuleSpecs[moduleItem.slug];
+  if (!moduleSpec) notFound();
 
   const related = studyModules
     .filter((entry) => entry.slug !== moduleItem.slug)
@@ -78,63 +82,121 @@ export default function ModuleDetailPage({ params }: { params: { slug: string } 
           </Card>
           <Card>
             <h2 className="text-lg font-semibold text-gia-blue">2. Description</h2>
-            <p className="mt-2 text-sm text-gray-700">{moduleItem.summary}</p>
+            <p className="mt-2 text-sm text-gray-700">{moduleSpec.description}</p>
           </Card>
           <Card>
             <h2 className="text-lg font-semibold text-gia-blue">3. Rationale</h2>
-            <p className="mt-2 text-sm text-gray-700">This module builds technical capacity needed for integrated groundwater intelligence delivery.</p>
+            <p className="mt-2 text-sm text-gray-700">{moduleSpec.rationale}</p>
           </Card>
           <Card>
             <h2 className="text-lg font-semibold text-gia-blue">4. Objectives</h2>
-            <p className="mt-2 text-sm text-gray-700">Develop domain understanding, quantitative skills, and implementation readiness.</p>
+            <ul className="mt-2 list-disc space-y-1.5 pl-5 text-sm text-gray-700">
+              {moduleSpec.objectives.map((objective) => (
+                <li key={objective}>{objective}</li>
+              ))}
+            </ul>
           </Card>
           <Card>
             <h2 className="text-lg font-semibold text-gia-blue">5. Learning Outcomes</h2>
-            <p className="mt-2 text-sm text-gray-700">Students demonstrate modelling competence, interpretation skill, and scientific communication.</p>
+            <ul className="mt-2 list-disc space-y-1.5 pl-5 text-sm text-gray-700">
+              {moduleSpec.learningOutcomes.map((outcome) => (
+                <li key={outcome.code}>
+                  <span className="font-semibold text-gia-blue">{outcome.code}:</span> {outcome.statement}
+                </li>
+              ))}
+            </ul>
           </Card>
-          <Card>
+          <Card className="md:col-span-2">
             <h2 className="text-lg font-semibold text-gia-blue">6. Course Units</h2>
-            <p className="mt-2 text-sm text-gray-700">Concepts, methods, implementation, and synthesis units are sequenced within coordinated block delivery.</p>
+            <ul className="mt-2 list-disc space-y-1.5 pl-5 text-sm text-gray-700">
+              {moduleSpec.courseUnits.map((unit) => (
+                <li key={unit.title}>
+                  <span className="font-semibold text-gia-blue">{unit.title}:</span> {unit.focus}
+                </li>
+              ))}
+            </ul>
           </Card>
-          <Card>
+          <Card className="md:col-span-2">
             <h2 className="text-lg font-semibold text-gia-blue">7. Teaching Schedule</h2>
-            <p className="mt-2 text-sm text-gray-700">Teaching weeks, practice weeks, and assessment windows are coordinated at semester level.</p>
+            <ul className="mt-2 list-disc space-y-1.5 pl-5 text-sm text-gray-700">
+              {moduleSpec.weeklySchedule.map((weekBlock) => (
+                <li key={`${weekBlock.week}-${weekBlock.topic}`}>
+                  <span className="font-semibold text-gia-blue">{weekBlock.week} - {weekBlock.topic}:</span>{" "}
+                  {weekBlock.activities.join(", ")}
+                </li>
+              ))}
+            </ul>
           </Card>
           <Card>
             <h2 className="text-lg font-semibold text-gia-blue">8. Practical Activities</h2>
-            <p className="mt-2 text-sm text-gray-700">Data analysis practicals, modelling exercises, and problem-based sessions.</p>
+            <ul className="mt-2 list-disc space-y-1.5 pl-5 text-sm text-gray-700">
+              {moduleSpec.practicalActivities.map((activity) => (
+                <li key={activity}>{activity}</li>
+              ))}
+            </ul>
           </Card>
           <Card>
             <h2 className="text-lg font-semibold text-gia-blue">9. Coding Labs</h2>
-            <p className="mt-2 text-sm text-gray-700">Hands-on labs with {moduleItem.software.join(", ")} for reproducible scientific workflows.</p>
+            <ul className="mt-2 list-disc space-y-1.5 pl-5 text-sm text-gray-700">
+              {moduleSpec.codingLabs.map((lab) => (
+                <li key={lab}>{lab}</li>
+              ))}
+            </ul>
           </Card>
           <Card>
             <h2 className="text-lg font-semibold text-gia-blue">10. Field Activities</h2>
-            <p className="mt-2 text-sm text-gray-700">Selected modules integrate field observation and measurement interpretation.</p>
+            <ul className="mt-2 list-disc space-y-1.5 pl-5 text-sm text-gray-700">
+              {moduleSpec.fieldActivities.map((activity) => (
+                <li key={activity}>{activity}</li>
+              ))}
+            </ul>
           </Card>
-          <Card>
+          <Card className="md:col-span-2">
             <h2 className="text-lg font-semibold text-gia-blue">11. Assessment</h2>
-            <p className="mt-2 text-sm text-gray-700">Assessment combines coursework, technical outputs, and applied evaluation tasks.</p>
+            <ul className="mt-2 list-disc space-y-1.5 pl-5 text-sm text-gray-700">
+              {moduleSpec.assessment.map((item) => (
+                <li key={item.title}>
+                  <span className="font-semibold text-gia-blue">{item.title} ({item.weight}%):</span> {item.description}
+                </li>
+              ))}
+            </ul>
           </Card>
-          <Card>
+          <Card className="md:col-span-2">
             <h2 className="text-lg font-semibold text-gia-blue">12. Module Project</h2>
-            <p className="mt-2 text-sm text-gray-700">Each module includes a project component aligned to studio or work-package context.</p>
+            <p className="mt-2 text-sm text-gray-700">
+              <span className="font-semibold text-gia-blue">{moduleSpec.project.title}:</span> {moduleSpec.project.brief}
+            </p>
+            <ul className="mt-2 list-disc space-y-1.5 pl-5 text-sm text-gray-700">
+              {moduleSpec.project.outputs.map((output) => (
+                <li key={output}>{output}</li>
+              ))}
+            </ul>
           </Card>
           <Card>
             <h2 className="text-lg font-semibold text-gia-blue">13. Expected Deliverables</h2>
-            <p className="mt-2 text-sm text-gray-700">Model notebooks, technical reports, code artifacts, and presentation outputs.</p>
+            <ul className="mt-2 list-disc space-y-1.5 pl-5 text-sm text-gray-700">
+              {moduleSpec.deliverables.map((deliverable) => (
+                <li key={deliverable}>{deliverable}</li>
+              ))}
+            </ul>
           </Card>
-          <Card>
+          <Card className="md:col-span-2">
             <h2 className="text-lg font-semibold text-gia-blue">14. Textbooks</h2>
-            <p className="mt-2 text-sm text-gray-700">Core reading list is published in semester handbooks and module briefs.</p>
+            <ul className="mt-2 list-disc space-y-1.5 pl-5 text-sm text-gray-700">
+              {moduleSpec.textbooks.map((textbook) => (
+                <li key={textbook.citation}>
+                  <span className="font-semibold text-gia-blue">{textbook.citation}:</span> {textbook.reason}
+                </li>
+              ))}
+            </ul>
           </Card>
           <Card>
             <h2 className="text-lg font-semibold text-gia-blue">15. Software</h2>
-            <p className="mt-2 text-sm text-gray-700">{moduleItem.software.join(", ")}</p>
+            <p className="mt-2 text-sm text-gray-700">{moduleSpec.software.join(", ")}</p>
           </Card>
           <Card>
             <h2 className="text-lg font-semibold text-gia-blue">16. WP Mapping</h2>
-            <p className="mt-2 text-sm text-gray-700">{moduleItem.wpMapping.join(", ")}</p>
+            <p className="mt-2 text-sm text-gray-700">{moduleSpec.wpMapping.join(", ")}</p>
           </Card>
           <Card className="md:col-span-2">
             <h2 className="text-lg font-semibold text-gia-blue">17. Related Modules</h2>

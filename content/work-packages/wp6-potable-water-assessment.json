@@ -9,6 +9,40 @@
     "How can quantity and quality be integrated into defensible safe-water decision metrics?",
     "How should treatment and intervention priorities be ranked under uncertainty?"
   ],
+  "specialSections": [
+    {
+      "title": "Quantity Assessment",
+      "body": "Estimate available groundwater volume under dynamic stress and scenario constraints."
+    },
+    {
+      "title": "Water-Quality Standards",
+      "body": "Evaluate outputs against potable-water compliance thresholds and guideline limits."
+    },
+    {
+      "title": "Potable-Volume Calculation",
+      "body": "Compute safe water volume after quantity, quality, and treatability constraints."
+    },
+    {
+      "title": "Treatment Needs",
+      "body": "Assess treatment requirements from contaminant profiles and risk levels."
+    },
+    {
+      "title": "Water-Safety Index",
+      "body": "Generate composite potable-water safety indicators for prioritization workflows."
+    },
+    {
+      "title": "Uncertainty",
+      "body": "Communicate confidence bounds and uncertainty pathways for transparent decisions."
+    },
+    {
+      "title": "Dashboards",
+      "body": "Expose actionable outputs through technical and stakeholder-ready dashboard views."
+    },
+    {
+      "title": "Policy Recommendations",
+      "body": "Translate technical findings into implementable policy and utility action pathways."
+    }
+  ],
   "tasks": [
     {
       "title": "Integrated Risk Synthesis",
