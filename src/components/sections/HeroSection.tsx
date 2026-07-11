@@ -36,7 +36,7 @@ const heroPresets: Record<
     title: "Advancing groundwater\nintelligence for safe and\nsustainable water systems",
     summary:
       "We integrate environmental science, applied mathematics, scientific computing, artificial intelligence and field observation to strengthen potable-water security.",
-    primaryCta: { label: "Explore the Research Framework", href: "/research", variant: "secondary" },
+    primaryCta: { label: "Explore Research Framework", href: "/research", variant: "secondary" },
     secondaryCta: { label: "Study with GIA", href: "/study", variant: "outline" },
     metricLabel: "",
     metricValue: "",

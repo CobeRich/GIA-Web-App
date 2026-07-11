@@ -3,7 +3,13 @@ import { notFound } from "next/navigation";
 import PageHero from "@/components/ui/PageHero";
 import { createMetadata } from "@/lib/metadata";
 
-const projectSlugs = ["aquifer-risk-mapping", "vadose-zone-core-physics", "potable-water-decision-engine"];
+const projectSlugs = [
+  "aquifer-risk-mapping",
+  "vadose-zone-core-physics",
+  "potable-water-decision-engine",
+  "multi-continuum-recharge",
+  "preferential-flow-activation-study",
+];
 
 export function generateStaticParams() {
   return projectSlugs.map((slug) => ({ slug }));

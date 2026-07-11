@@ -3,5 +3,17 @@
   "name": "Global Water Foundation",
   "category": "NGO",
   "website": "https://example.org",
-  "summary": "International NGO funding groundwater and potable water research."
+  "summary": "International NGO funding groundwater and potable water research.",
+  "location": "Nairobi, Kenya",
+  "collaborationArea": "Research financing and field implementation partnerships",
+  "activeProject": "Regional potable-water resilience pilot",
+  "relatedWp": "WP5, WP6",
+  "outcomes": [
+    "Co-funded pilot deployments in vulnerable districts",
+    "Joint impact monitoring framework for potable-water interventions"
+  ],
+  "news": [
+    "Joint pilot programme expansion announced",
+    "Annual impact review released"
+  ]
 }

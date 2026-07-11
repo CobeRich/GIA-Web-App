@@ -109,4 +109,105 @@ export interface Partner {
   logo?: Image;
   website?: string;
   summary?: string;
+  location?: string;
+  collaborationArea?: string;
+  activeProject?: string;
+  relatedWp?: string;
+  outcomes?: string[];
+  news?: string[];
+}
+
+export interface RelatedLink {
+  slug: string;
+  title: string;
+}
+
+export interface WorkPackageTask {
+  title: string;
+  stage: string;
+  summary: string;
+}
+
+export interface Deliverable {
+  title: string;
+  timeline: string;
+}
+
+export interface Milestone {
+  name: string;
+  target: string;
+}
+
+export interface WorkPackage {
+  slug: string;
+  code: "WP1" | "WP2" | "WP3" | "WP4" | "WP5" | "WP6";
+  title: string;
+  shortTitle: string;
+  stage: string;
+  objective: string;
+  questions: string[];
+  tasks: WorkPackageTask[];
+  inputs: RelatedLink[];
+  outputs: RelatedLink[];
+  deliverables: Deliverable[];
+  milestones: Milestone[];
+  relatedModules: string[];
+  relatedLaboratories: string[];
+  relatedProjects: string[];
+  relatedPublications: string[];
+  relatedDatasets: string[];
+  relatedSoftware: string[];
+}
+
+export interface ModuleContent {
+  slug: string;
+  code: string;
+  title: string;
+  semester: string;
+  credits: number;
+  summary: string;
+}
+
+export interface ResearchProjectContent {
+  slug: string;
+  title: string;
+  summary: string;
+}
+
+export interface LaboratoryContent {
+  slug: string;
+  title: string;
+  summary: string;
+}
+
+export interface PublicationContent {
+  slug: string;
+  title: string;
+  summary: string;
+  date: string;
+}
+
+export interface DatasetContent {
+  slug: string;
+  title: string;
+  summary: string;
+}
+
+export interface SoftwareContent {
+  slug: string;
+  title: string;
+  summary: string;
+}
+
+export interface FieldSiteContent {
+  slug: string;
+  title: string;
+  summary: string;
+}
+
+export interface PersonContent {
+  slug: string;
+  name: string;
+  role: string;
+  summary: string;
 }

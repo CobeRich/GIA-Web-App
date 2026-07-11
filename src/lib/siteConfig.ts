@@ -2,8 +2,9 @@ export const institution = {
   shortName: "GIA",
   fullName: "Groundwater Intelligence Academy",
   researchProgramme: "Integrated Framework for Potable Water Estimation and Management",
+  degreeProgramme: "MPhil Scientific Computing and Industrial Modeling",
   degreeTrack:
-    "MPhil Scientific Computing and Industrial Modeling - Groundwater Intelligence & Computational Environmental Systems Track",
+    "Groundwater Intelligence & Computational Environmental Systems Track",
 };
 
 export type HeroType = "A" | "B" | "C" | "D" | "E";

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import PageHero from "@/components/ui/PageHero";
 import Card from "@/components/ui/Card";
+import InnovationQuestionGrid from "@/components/innovation/InnovationQuestionGrid";
 
 export const metadata: Metadata = {
   title: "Innovation & Impact",
@@ -28,7 +29,20 @@ export default function InnovationPage() {
         title="Turning groundwater research into real-world impact"
         description="From prototypes to policy, GIA translates research into innovations that expand potable water access across Africa."
       />
-      <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
+
+      <section className="mx-auto max-w-[1240px] px-4 py-14 sm:px-6 lg:px-8">
+        <InnovationQuestionGrid
+          problem="Groundwater research outputs often fail to reach implementable products, policies, and services at scale."
+          solution="GIA runs an innovation pipeline that translates research into prototypes, transfer pathways, policy products, and partner deployments."
+          audience="Public agencies, utilities, private-sector actors, startups, and communities needing decision-ready water solutions."
+          research="Innovation outputs are grounded in WP1-WP6 findings, laboratory validation, and field evidence from platform-enabled workflows."
+          readiness="The innovation portfolio spans prototype stage to deployment-ready collaborations depending on domain and partner context."
+          engagement="Engage through collaboration enquiries, pilot partnerships, startup pathways, and consultancy scoping with the innovation team."
+        />
+      </section>
+
+      <section className="bg-gray-50 py-14">
+        <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {SUBSECTIONS.map((item) => (
             <Link key={item.href} href={item.href}>
@@ -38,6 +52,7 @@ export default function InnovationPage() {
               </Card>
             </Link>
           ))}
+        </div>
         </div>
       </section>
     </>

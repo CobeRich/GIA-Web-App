@@ -3,5 +3,17 @@
   "name": "Regional Water Board",
   "category": "Government",
   "website": "https://example.org",
-  "summary": "Government agency partner supporting potable water infrastructure projects."
+  "summary": "Government agency partner supporting potable water infrastructure projects.",
+  "location": "Accra, Ghana",
+  "collaborationArea": "Regulatory integration and groundwater planning",
+  "activeProject": "Aquifer risk mapping for utility planning",
+  "relatedWp": "WP4, WP6",
+  "outcomes": [
+    "Integrated risk layers adopted in planning workflow",
+    "Decision-support training delivered to technical teams"
+  ],
+  "news": [
+    "Planning dashboard pilot launched",
+    "Regulatory technical brief co-published"
+  ]
 }

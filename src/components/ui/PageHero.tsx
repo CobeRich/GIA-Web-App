@@ -16,16 +16,18 @@ export default function PageHero({
   eyebrow,
   children,
   heroType,
+  imageSrc,
 }: {
   title: string;
   description?: string;
   eyebrow?: string;
   children?: ReactNode;
   heroType?: HeroType;
+  imageSrc?: string;
 }) {
   const pathname = usePathname() ?? "/";
   const resolvedType = heroType ?? heroTypeByPath(pathname);
-  const backgroundImage = heroImageByType(resolvedType);
+  const backgroundImage = imageSrc ?? heroImageByType(resolvedType);
 
   const heroProps = {
     title,

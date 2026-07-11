@@ -13,13 +13,22 @@
 import fs from "node:fs";
 import path from "node:path";
 import type {
+  DatasetContent,
+  FieldSiteContent,
   EventItem,
   KnowledgeResource,
+  LaboratoryContent,
+  ModuleContent,
   NewsItem,
   Opportunity,
   Partner,
+  PersonContent,
+  PublicationContent,
+  ResearchProjectContent,
   ResearchEntry,
+  SoftwareContent,
   TeamMember,
+  WorkPackage,
 } from "@/types/content";
 
 const CONTENT_ROOT = path.join(process.cwd(), "content");
@@ -62,12 +71,57 @@ export function readPartners(): Partner[] {
   return readJsonDir<Partner>("partners");
 }
 
+export function readWorkPackages(): WorkPackage[] {
+  return readJsonDir<WorkPackage>("work-packages");
+}
+
+export function readModulesCollection(): ModuleContent[] {
+  return readJsonDir<ModuleContent>("modules");
+}
+
+export function readResearchProjects(): ResearchProjectContent[] {
+  return readJsonDir<ResearchProjectContent>("research-projects");
+}
+
+export function readLaboratories(): LaboratoryContent[] {
+  return readJsonDir<LaboratoryContent>("laboratories");
+}
+
+export function readPublications(): PublicationContent[] {
+  return readJsonDir<PublicationContent>("publications");
+}
+
+export function readDatasets(): DatasetContent[] {
+  return readJsonDir<DatasetContent>("datasets");
+}
+
+export function readSoftware(): SoftwareContent[] {
+  return readJsonDir<SoftwareContent>("software");
+}
+
+export function readFieldSites(): FieldSiteContent[] {
+  return readJsonDir<FieldSiteContent>("field-sites");
+}
+
+export function readPeople(): PersonContent[] {
+  return readJsonDir<PersonContent>("people");
+}
+
 export type {
+  DatasetContent,
+  FieldSiteContent,
   EventItem,
   KnowledgeResource,
+  LaboratoryContent,
+  ModuleContent,
   NewsItem,
   Opportunity,
   Partner,
+  PersonContent,
+  PublicationContent,
+  ResearchProjectContent,
   ResearchEntry,
+  SoftwareContent,
   TeamMember,
+  WorkPackage,
 };

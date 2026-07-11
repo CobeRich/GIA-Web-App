@@ -1,0 +1,51 @@
+{
+  "slug": "wp6-potable-water-assessment",
+  "code": "WP6",
+  "title": "Potable Water Assessment and Decision Support",
+  "shortTitle": "Potable Decisions",
+  "stage": "Decision Intelligence",
+  "objective": "Translate integrated model outputs into actionable potable-water assessments and decisions.",
+  "questions": [
+    "How can quantity and quality be integrated into defensible safe-water decision metrics?",
+    "How should treatment and intervention priorities be ranked under uncertainty?"
+  ],
+  "tasks": [
+    {
+      "title": "Integrated Risk Synthesis",
+      "stage": "Scoping",
+      "summary": "Combine quantity and quality outputs from WP1-WP5 into risk-ready indicators."
+    },
+    {
+      "title": "Decision Engine and Dashboard",
+      "stage": "Development",
+      "summary": "Implement decision-support workflows for stakeholder-facing planning."
+    },
+    {
+      "title": "Demonstration and Policy Translation",
+      "stage": "Delivery",
+      "summary": "Run demonstration cases and map model outputs to policy action pathways."
+    }
+  ],
+  "inputs": [
+    { "slug": "regional-aquifer-state", "title": "Regional Aquifer Outputs from WP4" },
+    { "slug": "human-system-scenarios", "title": "Human-System Scenarios from WP5" }
+  ],
+  "outputs": [
+    { "slug": "safe-water-index", "title": "Water Safety and Potability Index" },
+    { "slug": "decision-dashboards", "title": "Decision Dashboards and Prioritization Products" }
+  ],
+  "deliverables": [
+    { "title": "Potable-Water Decision Engine", "timeline": "Year 3" },
+    { "title": "Policy and Utility Dashboard Pack", "timeline": "Year 3-4" }
+  ],
+  "milestones": [
+    { "name": "M6.1 Integrated Index Operational", "target": "Q3 Year 3" },
+    { "name": "M6.2 Demonstration Cases Published", "target": "Q1 Year 4" }
+  ],
+  "relatedModules": ["gia-611", "gia-612", "gia-613", "gia-614"],
+  "relatedLaboratories": ["decision-intelligence-and-potability-laboratory"],
+  "relatedProjects": ["potable-water-decision-engine"],
+  "relatedPublications": ["published-or-planned-outputs"],
+  "relatedDatasets": ["safe-water-threshold-dataset", "integrated-risk-map-benchmark"],
+  "relatedSoftware": ["potable-risk-dashboard", "gia-multicontinuum-solver"]
+}

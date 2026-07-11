@@ -32,7 +32,7 @@ export const primaryNav: NavItem[] = [
       { label: "Themes", href: "/research/themes" },
       { label: "Field Sites", href: "/research/field-sites" },
       { label: "Datasets", href: "/research/datasets" },
-      { label: "Scientific Software", href: "/research/software" },
+      { label: "Scientific Software", href: "/research/scientific-software" },
       { label: "Collaboration", href: "/research/collaboration" },
     ],
   },
@@ -59,6 +59,7 @@ export const primaryNav: NavItem[] = [
       },
       { label: "Admissions", href: "/study/admissions" },
       { label: "Fees & Funding", href: "/study/fees-funding" },
+      { label: "Academic Calendar", href: "/study/academic-calendar" },
     ],
   },
   {
@@ -103,7 +104,7 @@ export const primaryNav: NavItem[] = [
     children: [
       { label: "News", href: "/news" },
       { label: "Events", href: "/events" },
-      { label: "Publications", href: "/research/publications" },
+      { label: "Publications", href: "/knowledge-hub/publications" },
       { label: "Technical Reports", href: "/knowledge-hub/reports" },
       { label: "Reports", href: "/knowledge-hub/reports" },
       { label: "Policy Briefs", href: "/knowledge-hub/policy-briefs" },

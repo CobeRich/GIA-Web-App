@@ -1,0 +1,49 @@
+{
+  "slug": "wp5-human-water-systems",
+  "code": "WP5",
+  "title": "Human-Water Systems",
+  "shortTitle": "Human Systems",
+  "stage": "Socio-Hydrology",
+  "objective": "Model human-system pressures and governance responses shaping groundwater outcomes.",
+  "questions": [
+    "How do abstraction and infrastructure systems modify subsurface quantity and quality trajectories?",
+    "Which policy interventions reduce potable-water risk across scenarios?"
+  ],
+  "tasks": [
+    {
+      "title": "Demand and Abstraction Modelling",
+      "stage": "Scoping",
+      "summary": "Characterize domestic, agricultural, and industrial groundwater demand and pumping behavior."
+    },
+    {
+      "title": "Infrastructure and Governance Coupling",
+      "stage": "Development",
+      "summary": "Represent leakage, sanitation, and policy drivers as model forcing terms."
+    },
+    {
+      "title": "Scenario Delivery",
+      "stage": "Delivery",
+      "summary": "Deliver intervention and future-development scenarios for WP3, WP4, and WP6."
+    }
+  ],
+  "inputs": [
+    { "slug": "demand-observations", "title": "Demand and Infrastructure Observations" }
+  ],
+  "outputs": [
+    { "slug": "human-system-scenarios", "title": "Human-System Scenario Library" }
+  ],
+  "deliverables": [
+    { "title": "Socio-Hydrology Scenario Catalogue", "timeline": "Year 2" },
+    { "title": "Governance Sensitivity Analysis", "timeline": "Year 3" }
+  ],
+  "milestones": [
+    { "name": "M5.1 Baseline Demand Scenarios Ready", "target": "Q3 Year 2" },
+    { "name": "M5.2 Intervention Scenarios Validated", "target": "Q2 Year 3" }
+  ],
+  "relatedModules": ["gia-614"],
+  "relatedLaboratories": ["socio-hydrology-and-policy-laboratory"],
+  "relatedProjects": ["potable-water-decision-engine"],
+  "relatedPublications": ["published-or-planned-outputs"],
+  "relatedDatasets": ["human-water-demand-scenarios", "governance-policy-intervention-dataset"],
+  "relatedSoftware": ["potable-risk-dashboard"]
+}

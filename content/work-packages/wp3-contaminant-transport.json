@@ -1,0 +1,51 @@
+{
+  "slug": "wp3-contaminant-transport",
+  "code": "WP3",
+  "title": "Multi-Continuum Contaminant Transport",
+  "shortTitle": "Contaminant Transport",
+  "stage": "Quality Systems",
+  "objective": "Model contaminant movement and transformation to quantify potable-water quality risk.",
+  "questions": [
+    "Which pathways dominate contaminant transfer under coupled flow regimes?",
+    "How do reactions and retardation alter risk-relevant concentration patterns?"
+  ],
+  "tasks": [
+    {
+      "title": "Source Characterization",
+      "stage": "Scoping",
+      "summary": "Define source-term classes and temporal loading profiles for contaminants."
+    },
+    {
+      "title": "Reactive Transport Integration",
+      "stage": "Development",
+      "summary": "Integrate advection-dispersion-reaction processes across interacting continua."
+    },
+    {
+      "title": "Risk Product Generation",
+      "stage": "Delivery",
+      "summary": "Deliver contaminant flux and quality-risk outputs to WP4 and WP6."
+    }
+  ],
+  "inputs": [
+    { "slug": "flow-fields", "title": "Flow Fields from WP2" },
+    { "slug": "human-system-scenarios", "title": "Human-System Scenarios from WP5" }
+  ],
+  "outputs": [
+    { "slug": "contaminant-risk-maps", "title": "Contaminant Risk Maps" },
+    { "slug": "aquifer-quality-products", "title": "Aquifer Quality Products" }
+  ],
+  "deliverables": [
+    { "title": "Reactive Transport Scenario Library", "timeline": "Year 2" },
+    { "title": "Quality Risk Maps for Pilot Sites", "timeline": "Year 2-3" }
+  ],
+  "milestones": [
+    { "name": "M3.1 Source and Pathway Model Ready", "target": "Q2 Year 2" },
+    { "name": "M3.2 Validation Against Observations", "target": "Q4 Year 2" }
+  ],
+  "relatedModules": ["gia-609"],
+  "relatedLaboratories": ["water-quality-and-transport-laboratory"],
+  "relatedProjects": ["preferential-flow-activation-study"],
+  "relatedPublications": ["published-or-planned-outputs"],
+  "relatedDatasets": ["contaminant-recharge-observations", "reactive-transport-benchmark"],
+  "relatedSoftware": ["gia-multicontinuum-solver"]
+}

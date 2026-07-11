@@ -3,8 +3,8 @@ import KPIBlock from "@/components/ui/KPIBlock";
 const STATS = [
   { value: "6", label: "Research Work Packages", icon: "◉" },
   { value: "16", label: "Specialist Academic Modules", icon: "◉" },
-  { value: "10", label: "Planned Research Laboratories", icon: "◉" },
-  { value: "1", label: "Integrated Groundwater Platform", icon: "◉" },
+  { value: "4", label: "Programme Phases", icon: "◉" },
+  { value: "1", label: "Integrated Intelligence Platform", icon: "◉" },
 ];
 
 export default function StatsSection() {

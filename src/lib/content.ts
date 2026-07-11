@@ -9,6 +9,7 @@
 import {
   readEvents,
   readKnowledgeResources,
+  readWorkPackages,
   readNews,
   readOpportunities,
   readPartners,
@@ -26,6 +27,7 @@ import type {
   ResearchEntryType,
   TeamCategory,
   TeamMember,
+  WorkPackage,
 } from "@/types/content";
 
 function byDateDesc<T extends { date: string }>(a: T, b: T): number {
@@ -121,4 +123,17 @@ export function getAllKnowledgeResources(): KnowledgeResource[] {
 // ---- Partners ----
 export function getAllPartners(): Partner[] {
   return readPartners();
+}
+
+export function getPartnerBySlug(slug: string): Partner | undefined {
+  return readPartners().find((partner) => partner.slug === slug);
+}
+
+// ---- Work Packages ----
+export function getAllWorkPackages(): WorkPackage[] {
+  return readWorkPackages();
+}
+
+export function getWorkPackageBySlug(slug: string): WorkPackage | undefined {
+  return readWorkPackages().find((wp) => wp.slug === slug);
 }

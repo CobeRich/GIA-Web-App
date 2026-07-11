@@ -12,7 +12,7 @@ export default function PartnerLogos({ partners }: { partners: Partner[] }) {
           {partners.map((partner) => (
             <Link
               key={partner.slug}
-              href="/partnerships"
+              href={`/partnerships/${partner.slug}`}
               className="flex h-16 w-40 items-center justify-center rounded border border-gray-200 bg-gray-50 text-center text-sm font-medium text-gray-500"
             >
               {/* TODO: Replace with real partner logo image */}

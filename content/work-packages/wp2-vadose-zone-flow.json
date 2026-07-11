@@ -1,0 +1,50 @@
+{
+  "slug": "wp2-vadose-zone-flow",
+  "code": "WP2",
+  "title": "Multi-Continuum Vadose-Zone Flow",
+  "shortTitle": "Vadose-Zone Flow",
+  "stage": "Core Physics",
+  "objective": "Develop multi-continuum vadose-zone flow representation for realistic recharge behavior.",
+  "questions": [
+    "How do matrix, macropore, and fracture continua exchange water under transient forcing?",
+    "Where are non-Darcian terms required for reliable event-scale predictions?"
+  ],
+  "tasks": [
+    {
+      "title": "Equation Formulation",
+      "stage": "Scoping",
+      "summary": "Define coupled Richards-based and non-Darcian flow equations for interacting continua."
+    },
+    {
+      "title": "Benchmark and Calibration",
+      "stage": "Development",
+      "summary": "Calibrate model behavior against synthetic and monitored infiltration benchmarks."
+    },
+    {
+      "title": "Recharge Product Delivery",
+      "stage": "Delivery",
+      "summary": "Generate recharge outputs and uncertainty ranges for aquifer and contaminant modules."
+    }
+  ],
+  "inputs": [
+    { "slug": "forcing-ensembles", "title": "Forcing Ensembles from WP1" }
+  ],
+  "outputs": [
+    { "slug": "recharge-products", "title": "Recharge and Flux Products" },
+    { "slug": "flow-fields", "title": "Vadose-Zone Flow Fields" }
+  ],
+  "deliverables": [
+    { "title": "Multi-Continuum Flow Solver Configuration", "timeline": "Year 1-2" },
+    { "title": "Recharge Uncertainty Atlas", "timeline": "Year 2" }
+  ],
+  "milestones": [
+    { "name": "M2.1 Numerical Core Verified", "target": "Q4 Year 1" },
+    { "name": "M2.2 Recharge Outputs Released", "target": "Q2 Year 2" }
+  ],
+  "relatedModules": ["gia-602", "gia-607", "gia-608", "gia-609"],
+  "relatedLaboratories": ["vadose-zone-and-porous-media-mechanics-laboratory"],
+  "relatedProjects": ["multi-continuum-recharge", "preferential-flow-activation-study"],
+  "relatedPublications": ["published-or-planned-outputs"],
+  "relatedDatasets": ["soil-hydraulic-benchmark", "synthetic-fractured-media-benchmark"],
+  "relatedSoftware": ["gia-multicontinuum-solver"]
+}

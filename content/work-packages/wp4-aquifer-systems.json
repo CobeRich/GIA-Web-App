@@ -1,0 +1,51 @@
+{
+  "slug": "wp4-aquifer-systems",
+  "code": "WP4",
+  "title": "Aquifer System Dynamics",
+  "shortTitle": "Aquifer Systems",
+  "stage": "Regional Integration",
+  "objective": "Integrate recharge, flow, quality, and stressors into aquifer-scale dynamic assessment.",
+  "questions": [
+    "How does heterogeneity affect regional storage and flow behavior?",
+    "How can aquifer vulnerability be mapped under coupled quantity-quality stressors?"
+  ],
+  "tasks": [
+    {
+      "title": "Aquifer Conceptual Model",
+      "stage": "Scoping",
+      "summary": "Define hydrostratigraphic architecture and process domains for regional simulations."
+    },
+    {
+      "title": "Coupled Regional Simulation",
+      "stage": "Development",
+      "summary": "Integrate WP2 recharge and WP3 quality dynamics under WP5 scenarios."
+    },
+    {
+      "title": "Vulnerability Mapping",
+      "stage": "Delivery",
+      "summary": "Produce regional maps of state, vulnerability, and risk indicators."
+    }
+  ],
+  "inputs": [
+    { "slug": "recharge-products", "title": "Recharge Products from WP2" },
+    { "slug": "aquifer-quality-products", "title": "Aquifer Quality Products from WP3" }
+  ],
+  "outputs": [
+    { "slug": "regional-aquifer-state", "title": "Regional Aquifer State Estimates" },
+    { "slug": "vulnerability-maps", "title": "Vulnerability and Risk Maps" }
+  ],
+  "deliverables": [
+    { "title": "Regional Aquifer Dynamics Model", "timeline": "Year 2-3" },
+    { "title": "Aquifer Vulnerability Atlas", "timeline": "Year 3" }
+  ],
+  "milestones": [
+    { "name": "M4.1 Regional Calibration Complete", "target": "Q2 Year 3" },
+    { "name": "M4.2 Risk Mapping Release", "target": "Q4 Year 3" }
+  ],
+  "relatedModules": ["gia-607", "gia-612"],
+  "relatedLaboratories": ["hydrogeology-and-aquifer-systems-laboratory"],
+  "relatedProjects": ["aquifer-risk-mapping"],
+  "relatedPublications": ["published-or-planned-outputs"],
+  "relatedDatasets": ["regional-aquifer-state-dataset", "vulnerability-index-benchmark"],
+  "relatedSoftware": ["aquifer-regional-model"]
+}

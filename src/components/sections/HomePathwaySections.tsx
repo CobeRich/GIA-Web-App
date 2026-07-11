@@ -2,25 +2,25 @@ import Link from "next/link";
 import { assetPaths, institution } from "@/lib/siteConfig";
 
 const pathwaySteps = [
-  { label: "Observe", href: "/platform/monitoring-iot" },
-  { label: "Model", href: "/research/integrated-framework" },
-  { label: "Compute", href: "/research" },
-  { label: "Predict", href: "/platform/ai-prediction" },
-  { label: "Decide", href: "/platform/dashboard" },
-  { label: "Innovate", href: "/innovation" },
+  { label: "Observe", href: "#field-to-decision-workflow" },
+  { label: "Model", href: "#work-package-flow" },
+  { label: "Compute", href: "#academic-spotlight" },
+  { label: "Predict", href: "#platform-demonstration" },
+  { label: "Decide", href: "#platform-demonstration" },
+  { label: "Innovate", href: "#innovation-impact" },
 ];
 
 const ecosystemCards = [
   {
     title: "Research",
     summary: institution.researchProgramme,
-    href: "/research",
+    href: "/research/integrated-framework",
     accent: "from-[#0f4f8a] to-[#0c2b4d]",
   },
   {
     title: "Education",
-    summary: institution.degreeTrack,
-    href: "/about",
+    summary: "MPhil SCIM - Groundwater Intelligence Track",
+    href: "/study/mphil-groundwater-intelligence",
     accent: "from-[#145a4b] to-[#0a2f27]",
   },
   {
@@ -34,33 +34,45 @@ const ecosystemCards = [
 const wpFlow = [
   {
     id: "WP1",
-    title: "Climate",
-    summary: "Atmospheric forcing, rainfall variability, and infiltration drivers.",
+    title: "Climate & Surface Forcing",
+    summary:
+      "Atmospheric forcing, rainfall variability, land-surface processes and boundary-condition generation.",
+    href: "/research/work-packages/wp1-climate-surface-forcing",
   },
   {
     id: "WP2",
-    title: "Vadose Zone",
-    summary: "Multi-continuum flow, exchange processes, and recharge generation.",
+    title: "Multi-Continuum Vadose-Zone Flow",
+    summary:
+      "Matrix, macropore and fracture flow, non-Darcian dynamics, exchange and groundwater recharge.",
+    href: "/research/work-packages/wp2-vadose-zone-flow",
   },
   {
     id: "WP3",
-    title: "Contaminants",
-    summary: "Source pathways, transport mechanisms, and quality outcomes.",
+    title: "Multi-Continuum Contaminant Transport",
+    summary:
+      "Contaminant sources, preferential pathways, reactions, exchange and groundwater-quality impacts.",
+    href: "/research/work-packages/wp3-contaminant-transport",
   },
   {
     id: "WP4",
-    title: "Aquifer",
-    summary: "Regional groundwater flow, storage, and vulnerability mapping.",
+    title: "Aquifer System Dynamics",
+    summary:
+      "Aquifer flow, storage, pumping, mixing, travel time, vulnerability and regional scaling.",
+    href: "/research/work-packages/wp4-aquifer-systems",
   },
   {
     id: "WP5",
-    title: "Human Systems",
-    summary: "Demand, abstraction, infrastructure feedback, and governance stressors.",
+    title: "Human-Water Systems & Engineered Perturbations",
+    summary:
+      "Abstraction, leakage, agriculture, mining, engineered recharge, demand and feedback mechanisms.",
+    href: "/research/work-packages/wp5-human-water-systems",
   },
   {
     id: "WP6",
-    title: "Potable-Water Decisions",
-    summary: "Risk indexing, treatment logic, and policy-ready decision support.",
+    title: "Potable Water Assessment & Decision Support",
+    summary:
+      "Water availability, quality, potability, risk analysis, treatment needs and policy-ready decisions.",
+    href: "/research/work-packages/wp6-potable-water-assessment",
   },
 ];
 
@@ -113,7 +125,7 @@ export function EcosystemPathways() {
 
 export function WorkPackageFlow() {
   return (
-    <section className="bg-white py-16">
+    <section id="work-package-flow" className="bg-white py-16">
       <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
         <div className="mb-8 flex flex-wrap items-end justify-between gap-4">
           <div>
@@ -122,22 +134,23 @@ export function WorkPackageFlow() {
               A connected WP1 to WP6 flow from climate forcing to potable-water decision support.
             </p>
           </div>
-          <Link href="/research" className="text-sm font-semibold text-[#0f4f8a] hover:underline">
+          <Link href="/research/work-packages" className="text-sm font-semibold text-[#0f4f8a] hover:underline">
             Explore all work packages
           </Link>
         </div>
         <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-6">
           {wpFlow.map((item) => (
-            <Link
+            <article
               key={item.id}
-              href="/research"
               className="group rounded-xl border border-slate-200 p-4 transition hover:border-[#0f4f8a] hover:shadow-md"
             >
               <p className="text-xs font-semibold uppercase tracking-wide text-[#0f4f8a]">{item.id}</p>
               <h3 className="mt-2 text-base font-semibold text-[#0c2b4d]">{item.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-slate-600">{item.summary}</p>
-              <p className="mt-4 text-xs font-semibold text-slate-500 group-hover:text-[#0f4f8a]">Explore WP</p>
-            </Link>
+              <div className="mt-4 text-xs font-semibold text-slate-500 group-hover:text-[#0f4f8a]">
+                <Link href={item.href}>Explore {item.id}</Link>
+              </div>
+            </article>
           ))}
         </div>
       </div>
@@ -147,24 +160,32 @@ export function WorkPackageFlow() {
 
 export function AcademicSpotlight() {
   return (
-    <section className="bg-[#eef5fb] py-16">
+    <section id="academic-spotlight" className="bg-[#eef5fb] py-16">
       <div className="mx-auto grid max-w-[1240px] gap-8 px-4 sm:px-6 lg:grid-cols-[1.2fr_0.8fr] lg:px-8">
         <div>
           <h2 className="text-3xl font-bold text-[#0c2b4d]">Academic Track Spotlight</h2>
           <p className="mt-3 max-w-[68ch] text-slate-700">
-            24-month, research-intensive progression across scientific foundations, mathematical
-            modeling, intelligent environmental systems, and dissertation work integrated with WP1-WP6.
+            MPhil Scientific Computing and Industrial Modeling - Groundwater Intelligence & Computational
+            Environmental Systems Track.
           </p>
-          <div className="mt-6 grid gap-3 sm:grid-cols-2">
+          <div className="mt-6 grid gap-3 sm:grid-cols-3">
             <div className="rounded-xl border border-slate-200 bg-white p-4">
               <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Duration</p>
               <p className="mt-1 text-lg font-semibold text-[#0c2b4d]">24 Months</p>
             </div>
             <div className="rounded-xl border border-slate-200 bg-white p-4">
-              <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Delivery</p>
-              <p className="mt-1 text-lg font-semibold text-[#0c2b4d]">Block Modular</p>
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Programme Phases</p>
+              <p className="mt-1 text-lg font-semibold text-[#0c2b4d]">4</p>
+            </div>
+            <div className="rounded-xl border border-slate-200 bg-white p-4">
+              <p className="text-xs font-semibold uppercase tracking-wide text-slate-500">Modules</p>
+              <p className="mt-1 text-lg font-semibold text-[#0c2b4d]">16</p>
             </div>
           </div>
+          <p className="mt-4 text-sm text-slate-700">
+            Includes structured progression through foundations, modelling, intelligent systems,
+            and a research dissertation.
+          </p>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
               href="/study/admissions"
@@ -173,10 +194,10 @@ export function AcademicSpotlight() {
               Apply to Study
             </Link>
             <Link
-              href={assetPaths.docTemplate}
+              href="/study/programme-structure"
               className="rounded-md border border-[#0f4f8a] bg-white px-5 py-3 text-sm font-semibold text-[#0f4f8a]"
             >
-              Download Programme Guide
+              Explore Curriculum
             </Link>
           </div>
         </div>
@@ -196,10 +217,13 @@ export function AcademicSpotlight() {
 
 export function PlatformDemonstration() {
   return (
-    <section className="bg-[#0b2a4a] py-16 text-white">
+    <section id="platform-demonstration" className="bg-[#0b2a4a] py-16 text-white">
       <div className="mx-auto grid max-w-[1240px] items-center gap-8 px-4 sm:px-6 lg:grid-cols-[0.9fr_1.1fr] lg:px-8">
         <div>
           <p className="text-xs font-semibold uppercase tracking-wide text-cyan-200">Platform Demonstration</p>
+          <p className="mt-2 inline-block rounded-full border border-cyan-200/40 bg-white/10 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-cyan-100">
+            Illustrative prototype data
+          </p>
           <h2 className="mt-3 text-3xl font-bold leading-tight">Groundwater Intelligence Platform and Digital Twin</h2>
           <p className="mt-4 text-slate-200">
             View map layers, recharge forecasts, quality scores, sensor status, and scenario comparisons
@@ -233,6 +257,9 @@ export function PlatformDemonstration() {
               <p className="mt-1 text-2xl font-bold text-amber-300">Moderate</p>
             </div>
           </div>
+          <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-cyan-100/90">
+            Illustrative prototype data
+          </p>
         </div>
       </div>
     </section>
@@ -249,7 +276,7 @@ export function FieldToDecisionWorkflow() {
   ];
 
   return (
-    <section className="bg-white py-16">
+    <section id="field-to-decision-workflow" className="bg-white py-16">
       <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-[#0c2b4d]">Field-to-Decision Workflow</h2>
         <div className="mt-8 grid gap-4 md:grid-cols-5">
@@ -274,7 +301,7 @@ export function InnovationImpactTiles() {
   ];
 
   return (
-    <section className="bg-[#f6f9fc] py-16">
+    <section id="innovation-impact" className="bg-[#f6f9fc] py-16">
       <div className="mx-auto max-w-[1240px] px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-[#0c2b4d]">Innovation and Impact</h2>
         <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
