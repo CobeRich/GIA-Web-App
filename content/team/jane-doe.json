@@ -1,0 +1,9 @@
+{
+  "slug": "jane-doe",
+  "name": "Dr. Jane Doe",
+  "role": "Executive Director",
+  "category": "leadership",
+  "bio": "Dr. Jane Doe leads GIA's mission to advance groundwater research and potable water access across Africa. TODO: Replace with real biography.",
+  "email": "director@gia.example.org",
+  "order": 1
+}
