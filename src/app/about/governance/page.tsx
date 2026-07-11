@@ -5,7 +5,7 @@ import { getTeamByCategory } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Governance",
-  description: "Governance structure, board and committees of the Groundwater Institute of Africa.",
+  description: "Governance structure, board and committees of the Groundwater Intelligence Academy.",
 };
 
 export default function GovernancePage() {

@@ -4,7 +4,7 @@ import Card from "@/components/ui/Card";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Get in touch with the Groundwater Institute of Africa.",
+  description: "Get in touch with the Groundwater Intelligence Academy.",
 };
 
 export default function ContactPage() {
@@ -20,7 +20,7 @@ export default function ContactPage() {
           <h2 className="mb-3 text-lg font-semibold text-gia-blue">Head Office</h2>
           {/* TODO: Replace with real contact details */}
           <p className="text-sm text-gray-600">
-            Groundwater Institute of Africa
+            Groundwater Intelligence Academy
             <br />
             123 Research Avenue
             <br />

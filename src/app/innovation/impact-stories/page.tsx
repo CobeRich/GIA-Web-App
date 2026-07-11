@@ -13,7 +13,7 @@ export default function ImpactStoriesPage() {
       <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
         <p className="text-gray-700">
           {/* TODO: Replace with real content for Impact Stories */}
-          From rural boreholes to national water policy, explore stories of how GIA's research has translated into measurable potable water impact.
+          From rural boreholes to national water policy, explore stories of how GIA&apos;s research has translated into measurable potable water impact.
         </p>
       </section>
     </>

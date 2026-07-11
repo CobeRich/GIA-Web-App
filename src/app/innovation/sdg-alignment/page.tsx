@@ -13,7 +13,7 @@ export default function SdgAlignmentPage() {
       <section className="mx-auto max-w-4xl px-4 py-16 sm:px-6 lg:px-8">
         <p className="text-gray-700">
           {/* TODO: Replace with real content for SDG Alignment */}
-          GIA's programmes directly advance SDG 6 (Clean Water and Sanitation) and contribute to SDG 3, 9, 13, and 17 through research, innovation, and partnership.
+          GIA&apos;s programmes directly advance SDG 6 (Clean Water and Sanitation) and contribute to SDG 3, 9, 13, and 17 through research, innovation, and partnership.
         </p>
       </section>
     </>

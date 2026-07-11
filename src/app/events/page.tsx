@@ -8,7 +8,7 @@ import { getAllEvents } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Events",
-  description: "Upcoming and past events from the Groundwater Institute of Africa.",
+  description: "Upcoming and past events from the Groundwater Intelligence Academy.",
 };
 
 export default function EventsPage() {

@@ -17,14 +17,14 @@ export default function Header() {
         <Link href="/" className="flex items-center gap-2.5" aria-label="Home">
           <Image
             src={assetPaths.logo}
-            alt={`${institution.shortName} logo`}
+            alt={`${institution.fullName} logo`}
             width={132}
             height={44}
             className="h-8 w-auto"
             priority
           />
           <span className="hidden max-w-[178px] text-[13px] font-semibold leading-tight text-slate-100 lg:block">
-            {institution.academyName}
+            {institution.fullName}
           </span>
         </Link>
 

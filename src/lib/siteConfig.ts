@@ -1,7 +1,6 @@
 export const institution = {
   shortName: "GIA",
-  fullName: "Groundwater Intelligence Institute of Africa",
-  academyName: "Groundwater Intelligence Academy",
+  fullName: "Groundwater Intelligence Academy",
   researchProgramme: "Integrated Framework for Potable Water Estimation and Management",
   degreeTrack:
     "MPhil Scientific Computing and Industrial Modeling - Groundwater Intelligence & Computational Environmental Systems Track",
@@ -34,30 +33,17 @@ export function heroImageByType(type: HeroType): string {
 }
 
 export function heroTypeByPath(pathname: string): HeroType {
-  if (pathname.startsWith("/research")) return "B";
   if (pathname.startsWith("/platform")) return "E";
 
-  if (pathname.startsWith("/forms/admissions") || pathname.startsWith("/about")) {
+  if (pathname.startsWith("/study/modules/")) return "D";
+
+  if (pathname.startsWith("/study")) {
     return "C";
   }
 
-  if (
-    pathname.startsWith("/innovation") ||
-    pathname.startsWith("/partnerships") ||
-    pathname.startsWith("/knowledge-hub") ||
-    pathname.startsWith("/news") ||
-    pathname.startsWith("/events") ||
-    pathname.startsWith("/contact") ||
-    pathname.startsWith("/opportunities")
-  ) {
-    return "A";
+  if (pathname.startsWith("/research") || pathname.startsWith("/laboratories")) {
+    return "B";
   }
-
-  if (pathname.startsWith("/forms/platform-access") || pathname.startsWith("/forms/data-access")) {
-    return "E";
-  }
-
-  if (pathname.startsWith("/forms")) return "C";
 
   return "A";
 }

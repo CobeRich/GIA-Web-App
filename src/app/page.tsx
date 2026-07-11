@@ -17,12 +17,15 @@ import {
 import { getAllNews, getAllResearchEntries, getAllPartners, getUpcomingEvents } from "@/lib/content";
 import { siteUrl } from "@/lib/utils";
 import { assetPaths, institution } from "@/lib/siteConfig";
+import { createMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
+export const metadata: Metadata = createMetadata({
   title: "Home",
   description:
-    "The Groundwater Intelligence Institute of Africa advances research, education, and platform innovation for safe and sustainable water systems.",
-};
+    "The Groundwater Intelligence Academy advances research, education, and platform innovation for safe and sustainable water systems.",
+  path: "/",
+  image: "/images/gia-hero-banner-a.png",
+});
 
 export default function HomePage() {
   const research = getAllResearchEntries().slice(0, 3);
@@ -38,7 +41,7 @@ export default function HomePage() {
     url: siteUrl("/"),
     logo: siteUrl(assetPaths.logo),
     description:
-      "The Groundwater Intelligence Institute of Africa advances groundwater research, education, and decision-support platform innovation.",
+      "The Groundwater Intelligence Academy advances groundwater research, education, and decision-support platform innovation.",
     sameAs: [],
   };
 

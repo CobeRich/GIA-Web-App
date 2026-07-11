@@ -6,7 +6,7 @@ import Card from "@/components/ui/Card";
 export const metadata: Metadata = {
   title: "About Us",
   description:
-    "Learn about the Groundwater Institute of Africa (GIA), our mission, team, leadership, governance and history.",
+    "Learn about the Groundwater Intelligence Academy (GIA), our mission, team, leadership, governance and history.",
 };
 
 const SUBSECTIONS = [
@@ -34,7 +34,7 @@ export default function AboutPage() {
       <PageHero
         eyebrow="About Us"
         title="Advancing groundwater science for a water-secure Africa"
-        description="The Groundwater Institute of Africa (GIA) is a research and innovation institute dedicated to groundwater science, potable water access, and capacity building across the continent."
+        description="The Groundwater Intelligence Academy (GIA) is a research and innovation institute dedicated to groundwater science, potable water access, and capacity building across the continent."
       />
       <section className="mx-auto max-w-5xl px-4 py-16 sm:px-6 lg:px-8">
         <h2 className="mb-4 text-2xl font-bold text-gia-blue">Our Mission</h2>

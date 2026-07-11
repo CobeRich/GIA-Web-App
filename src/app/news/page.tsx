@@ -7,7 +7,7 @@ import { getAllNews } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "News",
-  description: "The latest news from the Groundwater Institute of Africa.",
+  description: "The latest news from the Groundwater Intelligence Academy.",
 };
 
 export default function NewsPage() {

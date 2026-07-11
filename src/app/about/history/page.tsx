@@ -4,7 +4,7 @@ import Timeline from "@/components/ui/Timeline";
 
 export const metadata: Metadata = {
   title: "History",
-  description: "The history and milestones of the Groundwater Institute of Africa.",
+  description: "The history and milestones of the Groundwater Intelligence Academy.",
 };
 
 // TODO: Replace with real institutional history and milestones.
@@ -12,7 +12,7 @@ const HISTORY_EVENTS = [
   {
     year: "2015",
     title: "GIA Founded",
-    description: "The Groundwater Institute of Africa was established to advance groundwater science and potable water access.",
+    description: "The Groundwater Intelligence Academy was established to advance groundwater science and potable water access.",
   },
   {
     year: "2018",

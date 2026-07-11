@@ -5,7 +5,7 @@ import { getAllTeam } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Our Team",
-  description: "Meet the researchers and staff of the Groundwater Institute of Africa.",
+  description: "Meet the researchers and staff of the Groundwater Intelligence Academy.",
 };
 
 export default function TeamPage() {

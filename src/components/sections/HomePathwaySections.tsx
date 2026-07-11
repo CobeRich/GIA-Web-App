@@ -167,7 +167,7 @@ export function AcademicSpotlight() {
           </div>
           <div className="mt-6 flex flex-wrap gap-3">
             <Link
-              href="/forms/admissions"
+              href="/study/admissions"
               className="rounded-md bg-[#117a65] px-5 py-3 text-sm font-semibold text-white hover:bg-[#0f6a58]"
             >
               Apply to Study
@@ -302,7 +302,7 @@ export function FinalCallToAction() {
           <Link href="/forms/partnership" className="rounded-md bg-[#117a65] px-5 py-3 text-sm font-semibold text-white">
             Become a Partner
           </Link>
-          <Link href="/forms/admissions" className="rounded-md border border-white/40 px-5 py-3 text-sm font-semibold text-white">
+          <Link href="/study/admissions" className="rounded-md border border-white/40 px-5 py-3 text-sm font-semibold text-white">
             Apply to Study
           </Link>
           <Link href="/forms/collaboration" className="rounded-md border border-white/40 px-5 py-3 text-sm font-semibold text-white">

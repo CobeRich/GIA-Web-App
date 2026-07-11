@@ -7,7 +7,7 @@ import { getAllOpportunities, getOpportunityCategories } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Opportunities",
-  description: "Jobs, scholarships, fellowships, and other opportunities at the Groundwater Institute of Africa.",
+  description: "Jobs, scholarships, fellowships, and other opportunities at the Groundwater Intelligence Academy.",
 };
 
 export default function OpportunitiesPage() {
@@ -19,7 +19,7 @@ export default function OpportunitiesPage() {
       <PageHero
         eyebrow="Opportunities"
         title="Opportunities at GIA"
-        description="Explore jobs, scholarships, fellowships, and other opportunities to work with the Groundwater Institute of Africa."
+        description="Explore jobs, scholarships, fellowships, and other opportunities to work with the Groundwater Intelligence Academy."
       />
       <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6 lg:px-8">
         <div className="mb-10 flex flex-wrap gap-3">

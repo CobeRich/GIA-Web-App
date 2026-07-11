@@ -32,14 +32,14 @@ const heroPresets: Record<
   }
 > = {
   A: {
-    eyebrow: institution.fullName,
+    eyebrow: "GROUNDWATER INTELLIGENCE ACADEMY",
     title: "Advancing groundwater\nintelligence for safe and\nsustainable water systems",
     summary:
-      "We combine environmental science, applied mathematics, scientific computing, artificial intelligence, and field observation to strengthen potable-water security across Africa.",
+      "We integrate environmental science, applied mathematics, scientific computing, artificial intelligence and field observation to strengthen potable-water security.",
     primaryCta: { label: "Explore the Research Framework", href: "/research", variant: "secondary" },
-    secondaryCta: { label: "Study with GIA", href: "/about", variant: "outline" },
-    metricLabel: "Research Work Packages",
-    metricValue: "6",
+    secondaryCta: { label: "Study with GIA", href: "/study", variant: "outline" },
+    metricLabel: "",
+    metricValue: "",
   },
   B: {
     eyebrow: "WORK PACKAGE 2 - CORE PHYSICS",
@@ -56,7 +56,7 @@ const heroPresets: Record<
     title: "Groundwater Intelligence & Computational Environmental Systems",
     summary:
       "A two-year research-intensive track integrating environmental science, applied mathematics, scientific computing, artificial intelligence, monitoring, and decision support.",
-    primaryCta: { label: "Apply to the Programme", href: "/forms/admissions", variant: "secondary" },
+    primaryCta: { label: "Apply to the Programme", href: "/study/admissions", variant: "secondary" },
     secondaryCta: { label: "Download Handbook", href: assetPaths.docTemplate, variant: "outline" },
     metricLabel: "Duration",
     metricValue: "24 Months",
@@ -66,7 +66,7 @@ const heroPresets: Record<
     title: "Non-Darcian Flow, Volume Averaging & Multi-Continuum Theory",
     summary:
       "Develop advanced mathematical and computational techniques to represent complex flow in heterogeneous porous media.",
-    primaryCta: { label: "Module Overview", href: "/about/history", variant: "secondary" },
+    primaryCta: { label: "Module Overview", href: "/study/modules", variant: "secondary" },
     secondaryCta: { label: "Module Guide", href: assetPaths.docTemplate, variant: "outline" },
     metricLabel: "Module Duration",
     metricValue: "8 Weeks",
@@ -108,7 +108,7 @@ export default function HeroSection({
     <section className={cn("relative overflow-hidden text-white", className)}>
       <Image
         src={backgroundImage}
-        alt={`${institution.academyName} hero banner type ${type}`}
+        alt={`${institution.fullName} hero banner type ${type}`}
         fill
         className="object-cover"
         priority={type === "A"}
@@ -148,15 +148,19 @@ export default function HeroSection({
               {copy.secondaryCta.label}
             </Button>
           </div>
-          <div className="mt-5 inline-block rounded-xl border border-white/20 bg-[#06203a]/80 px-4 py-2.5 backdrop-blur">
-            <p className="text-[0.65rem] uppercase tracking-[0.15em] text-cyan-200">
-              {preset.metricLabel}
-            </p>
-            <p className="mt-1 text-2xl font-bold text-white">{preset.metricValue}</p>
-          </div>
-          <p className="mt-4 max-w-[32ch] text-xs text-slate-200">
-            Field observation to model-driven decision support
-          </p>
+          {type !== "A" ? (
+            <>
+              <div className="mt-5 inline-block rounded-xl border border-white/20 bg-[#06203a]/80 px-4 py-2.5 backdrop-blur">
+                <p className="text-[0.65rem] uppercase tracking-[0.15em] text-cyan-200">
+                  {preset.metricLabel}
+                </p>
+                <p className="mt-1 text-2xl font-bold text-white">{preset.metricValue}</p>
+              </div>
+              <p className="mt-4 max-w-[32ch] text-xs text-slate-200">
+                Field observation to model-driven decision support
+              </p>
+            </>
+          ) : null}
         </div>
       </div>
     </section>

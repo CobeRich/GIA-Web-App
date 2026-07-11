@@ -5,7 +5,7 @@ import { getTeamByCategory } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Leadership",
-  description: "Meet the leadership team of the Groundwater Institute of Africa.",
+  description: "Meet the leadership team of the Groundwater Intelligence Academy.",
 };
 
 export default function LeadershipPage() {

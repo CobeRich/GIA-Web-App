@@ -4,7 +4,7 @@ import PartnershipForm from "@/components/forms/PartnershipForm";
 
 export const metadata: Metadata = {
   title: "Become a Partner",
-  description: "Learn how your organisation can become a partner of the Groundwater Institute of Africa.",
+  description: "Learn how your organisation can become a partner of the Groundwater Intelligence Academy.",
 };
 
 export default function BecomeAPartnerPage() {

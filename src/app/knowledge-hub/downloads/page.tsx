@@ -5,7 +5,7 @@ import { getAllKnowledgeResources } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Downloads",
-  description: "All downloadable resources published by the Groundwater Institute of Africa.",
+  description: "All downloadable resources published by the Groundwater Intelligence Academy.",
 };
 
 export default function DownloadsPage() {

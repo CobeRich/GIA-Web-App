@@ -17,7 +17,7 @@ export function generateMetadata({
 }): Metadata {
   return {
     title: `${capitalize(params.category)} Opportunities`,
-    description: `Browse ${params.category} opportunities at the Groundwater Institute of Africa.`,
+    description: `Browse ${params.category} opportunities at the Groundwater Intelligence Academy.`,
   };
 }
 

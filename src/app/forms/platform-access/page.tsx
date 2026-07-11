@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Request access to the GIA digital platform.",
 };
 
-export default function Platform AccessPage() {
+export default function PlatformAccessPage() {
   return (
     <>
       <PageHero eyebrow="Forms" title="Platform Access Request" description="Request access to the GIA digital platform." />

@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Subscribe to receive the GIA newsletter.",
 };
 
-export default function Newsletter SignupPage() {
+export default function NewsletterSignupPage() {
   return (
     <>
       <PageHero eyebrow="Forms" title="Newsletter Signup" description="Subscribe to receive the GIA newsletter." />

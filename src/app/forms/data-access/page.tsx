@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   description: "Request access to a restricted GIA groundwater or potable water dataset.",
 };
 
-export default function Data AccessPage() {
+export default function DataAccessPage() {
   return (
     <>
       <PageHero eyebrow="Forms" title="Dataset Access Request" description="Request access to a restricted GIA groundwater or potable water dataset." />
