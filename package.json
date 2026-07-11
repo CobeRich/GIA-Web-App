@@ -1,0 +1,25 @@
+{
+  "name": "gia-web-app",
+  "version": "1.0.0",
+  "description": "Groundwater Intelligence Academy institutional website MVP with potable water-focused public content.",
+  "main": "src/generate-site.js",
+  "scripts": {
+    "build": "node src/generate-site.js",
+    "test": "npm run build && node --test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CobeRich/GIA-Web-App.git"
+  },
+  "keywords": [
+    "groundwater",
+    "potable-water",
+    "static-site"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CobeRich/GIA-Web-App/issues"
+  },
+  "homepage": "https://github.com/CobeRich/GIA-Web-App#readme"
+}
