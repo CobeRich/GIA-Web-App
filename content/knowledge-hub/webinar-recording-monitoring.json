@@ -1,0 +1,9 @@
+{
+  "slug": "webinar-recording-monitoring",
+  "type": "webinar",
+  "title": "Webinar Recording: IoT Monitoring for Potable Water Systems",
+  "summary": "Recorded session on deploying IoT sensors for potable water monitoring networks.",
+  "date": "2025-03-12",
+  "tags": ["webinar", "iot"],
+  "externalUrl": "https://example.org/webinars/iot-monitoring"
+}

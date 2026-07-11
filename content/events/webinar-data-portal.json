@@ -1,0 +1,12 @@
+{
+  "slug": "webinar-data-portal",
+  "title": "Webinar: Using the GIA Data Portal for Potable Water Research",
+  "summary": "A hands-on webinar covering the GIA data portal, APIs, and datasets for groundwater and potable water research.",
+  "body": "This webinar walks participants through the GIA data portal, including datasets, APIs, and access requests. TODO: Replace with real event details.",
+  "startDate": "2025-06-18",
+  "location": "Online",
+  "isVirtual": true,
+  "category": "Webinar",
+  "tags": ["data", "training"],
+  "registrationOpen": true
+}

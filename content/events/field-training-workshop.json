@@ -1,0 +1,13 @@
+{
+  "slug": "field-training-workshop",
+  "title": "Field Training Workshop: Groundwater Monitoring",
+  "summary": "Hands-on field training for students and staff on groundwater monitoring instrumentation.",
+  "body": "A practical field workshop on groundwater monitoring equipment and techniques used to safeguard potable water supplies. TODO: Replace with real event details.",
+  "startDate": "2025-07-22",
+  "endDate": "2025-07-24",
+  "location": "Accra, Ghana",
+  "isVirtual": false,
+  "category": "Workshop",
+  "tags": ["training", "field-work"],
+  "registrationOpen": false
+}

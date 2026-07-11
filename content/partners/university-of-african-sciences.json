@@ -1,0 +1,19 @@
+{
+  "slug": "university-of-african-sciences",
+  "name": "University of African Sciences",
+  "category": "Academic",
+  "website": "https://example.org",
+  "summary": "Academic partner collaborating on groundwater research and training.",
+  "location": "Kampala, Uganda",
+  "collaborationArea": "Joint postgraduate research and laboratory collaboration",
+  "activeProject": "Vadose-zone and contaminant transport benchmark programme",
+  "relatedWp": "WP2, WP3",
+  "outcomes": [
+    "Co-supervised MPhil research outputs",
+    "Shared benchmark datasets for model validation"
+  ],
+  "news": [
+    "Joint laboratory exchange cycle completed",
+    "Collaborative publication under review"
+  ]
+}

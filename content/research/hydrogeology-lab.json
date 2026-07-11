@@ -1,0 +1,9 @@
+{
+  "slug": "hydrogeology-lab",
+  "type": "laboratory",
+  "title": "Hydrogeology Laboratory",
+  "summary": "Core laboratory for aquifer analysis and potable water quality testing.",
+  "body": "The Hydrogeology Laboratory conducts aquifer characterization and potable water quality testing for research partners across Africa. TODO: Replace with real lab content.",
+  "tags": ["laboratory", "water-quality"],
+  "leadResearcher": "Dr. John Smith"
+}

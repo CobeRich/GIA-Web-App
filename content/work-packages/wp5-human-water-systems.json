@@ -1,0 +1,83 @@
+{
+  "slug": "wp5-human-water-systems",
+  "code": "WP5",
+  "title": "Human-Water Systems",
+  "shortTitle": "Human Systems",
+  "stage": "Socio-Hydrology",
+  "objective": "Model human-system pressures and governance responses shaping groundwater outcomes.",
+  "questions": [
+    "How do abstraction and infrastructure systems modify subsurface quantity and quality trajectories?",
+    "Which policy interventions reduce potable-water risk across scenarios?"
+  ],
+  "specialSections": [
+    {
+      "title": "Abstraction",
+      "body": "Characterize withdrawal intensity, distribution, and timing across sectors."
+    },
+    {
+      "title": "Demand",
+      "body": "Represent domestic, agricultural, and industrial demand trajectories under uncertainty."
+    },
+    {
+      "title": "Sewer and Pipeline Leakage",
+      "body": "Capture leakage pathways that alter recharge and contamination conditions."
+    },
+    {
+      "title": "Mining and Industry",
+      "body": "Model extraction and industrial activity impacts on groundwater quantity and quality."
+    },
+    {
+      "title": "Irrigation Return Flow",
+      "body": "Estimate delayed return-flow contributions and pollutant transport effects."
+    },
+    {
+      "title": "Engineered Recharge",
+      "body": "Assess managed aquifer recharge interventions for resilience and recovery."
+    },
+    {
+      "title": "Feedback Mechanisms",
+      "body": "Model two-way socio-hydrological feedbacks between behavior, infrastructure, and aquifer response."
+    },
+    {
+      "title": "Governance Scenarios",
+      "body": "Translate regulation and policy levers into scenario constraints and outcomes."
+    }
+  ],
+  "tasks": [
+    {
+      "title": "Demand and Abstraction Modelling",
+      "stage": "Scoping",
+      "summary": "Characterize domestic, agricultural, and industrial groundwater demand and pumping behavior."
+    },
+    {
+      "title": "Infrastructure and Governance Coupling",
+      "stage": "Development",
+      "summary": "Represent leakage, sanitation, and policy drivers as model forcing terms."
+    },
+    {
+      "title": "Scenario Delivery",
+      "stage": "Delivery",
+      "summary": "Deliver intervention and future-development scenarios for WP3, WP4, and WP6."
+    }
+  ],
+  "inputs": [
+    { "slug": "demand-observations", "title": "Demand and Infrastructure Observations" }
+  ],
+  "outputs": [
+    { "slug": "human-system-scenarios", "title": "Human-System Scenario Library" }
+  ],
+  "deliverables": [
+    { "title": "Socio-Hydrology Scenario Catalogue", "timeline": "Year 2" },
+    { "title": "Governance Sensitivity Analysis", "timeline": "Year 3" }
+  ],
+  "milestones": [
+    { "name": "M5.1 Baseline Demand Scenarios Ready", "target": "Q3 Year 2" },
+    { "name": "M5.2 Intervention Scenarios Validated", "target": "Q2 Year 3" }
+  ],
+  "relatedModules": ["gia-614"],
+  "relatedLaboratories": ["socio-hydrology-and-policy-laboratory"],
+  "relatedProjects": ["potable-water-decision-engine"],
+  "relatedPublications": ["published-or-planned-outputs"],
+  "relatedDatasets": ["human-water-demand-scenarios", "governance-policy-intervention-dataset"],
+  "relatedSoftware": ["potable-risk-dashboard"]
+}

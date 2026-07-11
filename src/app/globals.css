@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #1a1a1a;
+  --gia-max-width: 1240px;
+  --section-pad: clamp(3rem, 5vw, 6rem);
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+section {
+  scroll-margin-top: 6rem;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}

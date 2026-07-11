@@ -1,0 +1,100 @@
+{
+  "slug": "wp1-climate-surface-forcing",
+  "code": "WP1",
+  "title": "Climate and Surface Forcing",
+  "shortTitle": "Climate Forcing",
+  "stage": "Foundations",
+  "objective": "Characterize atmospheric and surface forcing conditions that govern recharge and boundary-state evolution.",
+  "questions": [
+    "How do climate variability and event dynamics shape groundwater-relevant forcing?",
+    "How should forcing uncertainty be propagated into subsurface simulations?"
+  ],
+  "specialSections": [
+    {
+      "title": "Forcing Variables",
+      "bullets": [
+        "Precipitation",
+        "Temperature",
+        "Humidity",
+        "Wind",
+        "Radiation",
+        "Pressure"
+      ]
+    },
+    {
+      "title": "Rainfall Development Ladder",
+      "bullets": [
+        "Homogeneous rainfall",
+        "Multi-class rainfall",
+        "Temporal variation",
+        "Spatial variation",
+        "Space-time variation",
+        "Event-driven forcing",
+        "Stochastic forcing"
+      ]
+    },
+    {
+      "title": "Temporal Variation",
+      "body": "Resolve seasonal, sub-seasonal, and extreme-event timing effects on infiltration and recharge pulses."
+    },
+    {
+      "title": "Spatial Variation",
+      "body": "Represent heterogeneity in rainfall and land-surface controls across field, catchment, and basin scales."
+    },
+    {
+      "title": "Stochastic Forcing",
+      "body": "Generate uncertainty-aware forcing realizations for stress testing and robust downstream simulation."
+    },
+    {
+      "title": "Land-Use and Surface Conditions",
+      "body": "Account for vegetation, imperviousness, roughness, and soil-cover impacts on runoff-infiltration partitioning."
+    },
+    {
+      "title": "Boundary-Condition Generation",
+      "body": "Create consistent boundary-condition products for WP2-WP6 coupling and scenario replay."
+    },
+    {
+      "title": "Validation Datasets",
+      "body": "Validate forcing products against station networks, remote-sensing retrievals, and curated benchmark archives."
+    }
+  ],
+  "tasks": [
+    {
+      "title": "Forcing Data Curation",
+      "stage": "Scoping",
+      "summary": "Assemble weather, land-surface, and hydroclimate observations for consistent modelling inputs."
+    },
+    {
+      "title": "Scenario Generation",
+      "stage": "Development",
+      "summary": "Construct historical, extreme-event, and climate-change forcing ensembles."
+    },
+    {
+      "title": "Boundary Packaging",
+      "stage": "Delivery",
+      "summary": "Publish boundary-condition products consumed by downstream work packages."
+    }
+  ],
+  "inputs": [
+    { "slug": "hydroclimate-observations", "title": "Hydroclimate Observations" },
+    { "slug": "land-surface-products", "title": "Land-Surface Products" }
+  ],
+  "outputs": [
+    { "slug": "forcing-ensembles", "title": "Forcing Ensembles" },
+    { "slug": "boundary-condition-packages", "title": "Boundary Condition Packages" }
+  ],
+  "deliverables": [
+    { "title": "Climate and Surface Forcing Dataset", "timeline": "Year 1" },
+    { "title": "Uncertainty-Characterized Boundary Conditions", "timeline": "Year 1-2" }
+  ],
+  "milestones": [
+    { "name": "M1.1 Forcing Baseline Complete", "target": "Q2 Year 1" },
+    { "name": "M1.2 Climate Stress Cases Delivered", "target": "Q4 Year 1" }
+  ],
+  "relatedModules": ["gia-603", "gia-605"],
+  "relatedLaboratories": ["hydroclimate-and-forcing-laboratory"],
+  "relatedProjects": ["multi-continuum-recharge"],
+  "relatedPublications": ["published-or-planned-outputs"],
+  "relatedDatasets": ["rainfall-forcing-ensemble", "surface-boundary-condition-benchmark"],
+  "relatedSoftware": ["gia-multicontinuum-solver"]
+}

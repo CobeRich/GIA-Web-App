@@ -1,0 +1,9 @@
+{
+  "slug": "john-smith",
+  "name": "Dr. John Smith",
+  "role": "Head of Research",
+  "category": "researcher",
+  "bio": "Dr. John Smith oversees GIA's research themes on groundwater modelling and potable water quality. TODO: Replace with real biography.",
+  "email": "research@gia.example.org",
+  "order": 2
+}

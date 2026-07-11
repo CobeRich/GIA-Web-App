@@ -1,0 +1,9 @@
+{
+  "slug": "sahel-field-site",
+  "type": "field-site",
+  "title": "Sahel Regional Field Site",
+  "summary": "Field monitoring site studying aquifer recharge and potable water access in the Sahel region.",
+  "body": "The Sahel Regional Field Site collects long-term data on aquifer recharge rates and community potable water access. TODO: Replace with real field-site content.",
+  "tags": ["field-site", "monitoring"],
+  "location": "Sahel Region"
+}
