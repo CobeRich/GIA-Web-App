@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { footerLinks } from "@/lib/navigation";
+import { institution } from "@/lib/siteConfig";
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -9,11 +10,11 @@ export default function Footer() {
         <div className="grid grid-cols-2 gap-8 sm:grid-cols-4">
           <div className="col-span-2">
             <span className="text-lg font-semibold text-white">
-              Groundwater Institute of Africa
+              {institution.fullName}
             </span>
             <p className="mt-2 max-w-sm text-sm text-gia-light/80">
-              Advancing groundwater research, innovation, and potable water access
-              across Africa through science, partnership, and capacity building.
+              Advancing groundwater intelligence through research, education,
+              platform engineering, and partnership across Africa.
             </p>
           </div>
           <div>
@@ -54,7 +55,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-10 border-t border-white/10 pt-6 text-xs text-gia-light/70">
-          © {year} Groundwater Institute of Africa. All rights reserved. {" "}
+          © {year} {institution.fullName}. All rights reserved. {" "}
           {/* TODO: Replace with real legal/registration details */}
         </div>
       </div>

@@ -44,6 +44,10 @@ export default function Button(props: ButtonProps) {
 
   if (props.href) {
     const { href, variant: _v, size: _s, className: _c, children: _ch, ...rest } = props;
+    void _v;
+    void _s;
+    void _c;
+    void _ch;
     return (
       <Link href={href} className={classes} {...rest}>
         {children}
@@ -53,6 +57,11 @@ export default function Button(props: ButtonProps) {
 
   const { variant: _v, size: _s, className: _c, children: _ch, href: _h, ...rest } =
     props as ButtonAsButton;
+  void _v;
+  void _s;
+  void _c;
+  void _ch;
+  void _h;
   return (
     <button className={classes} {...rest}>
       {children}

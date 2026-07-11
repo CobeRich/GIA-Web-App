@@ -20,15 +20,39 @@ export const primaryNav: NavItem[] = [
     label: "Research",
     href: "/research",
     children: [
+      { label: "Integrated Framework", href: "/research/integrated-framework" },
+      { label: "Work Packages", href: "/research/work-packages" },
       { label: "Laboratories", href: "/research/laboratories" },
       { label: "Themes", href: "/research/themes" },
       { label: "Field Sites", href: "/research/field-sites" },
-      { label: "Collaboration", href: "/research/collaboration" },
-      { label: "Datasets", href: "/research/datasets" },
+      { label: "Projects", href: "/research/projects" },
     ],
   },
   {
-    label: "Innovation & Impact",
+    label: "Study",
+    href: "/about",
+    children: [
+      { label: "Academic Overview", href: "/about" },
+      { label: "MPhil Track", href: "/about/history" },
+      { label: "Admissions", href: "/forms/admissions" },
+      { label: "Fees and Funding", href: "/opportunities" },
+    ],
+  },
+  {
+    label: "Platform",
+    href: "/platform",
+    children: [
+      { label: "Data Portal", href: "/platform/data-portal" },
+      { label: "Modelling Engine", href: "/platform/modelling-engine" },
+      { label: "AI Prediction", href: "/platform/ai-prediction" },
+      { label: "Digital Twin", href: "/platform/digital-twin" },
+      { label: "Monitoring & IoT", href: "/platform/monitoring-iot" },
+      { label: "Dashboard", href: "/platform/dashboard" },
+      { label: "API Docs", href: "/platform/api-docs" },
+    ],
+  },
+  {
+    label: "Innovation",
     href: "/innovation",
     children: [
       { label: "Technology Transfer", href: "/innovation/technology-transfer" },
@@ -54,6 +78,8 @@ export const primaryNav: NavItem[] = [
     label: "Knowledge Hub",
     href: "/knowledge-hub",
     children: [
+      { label: "News", href: "/news" },
+      { label: "Events", href: "/events" },
       { label: "Reports", href: "/knowledge-hub/reports" },
       { label: "Policy Briefs", href: "/knowledge-hub/policy-briefs" },
       { label: "Educational Resources", href: "/knowledge-hub/educational-resources" },
@@ -67,33 +93,22 @@ export const primaryNav: NavItem[] = [
     label: "Opportunities",
     href: "/opportunities",
   },
-  {
-    label: "Platform",
-    href: "/platform",
-    children: [
-      { label: "Data Portal", href: "/platform/data-portal" },
-      { label: "Modelling Engine", href: "/platform/modelling-engine" },
-      { label: "AI Prediction", href: "/platform/ai-prediction" },
-      { label: "Digital Twin", href: "/platform/digital-twin" },
-      { label: "Monitoring & IoT", href: "/platform/monitoring-iot" },
-      { label: "Dashboard", href: "/platform/dashboard" },
-      { label: "Maps", href: "/platform/maps" },
-      { label: "API Docs", href: "/platform/api-docs" },
-      { label: "Access", href: "/platform/access" },
-    ],
-  },
-  { label: "News", href: "/news" },
-  { label: "Events", href: "/events" },
+];
+
+export const utilityNav: NavItem[] = [
+  { label: "Search", href: "/knowledge-hub" },
   { label: "Contact", href: "/contact" },
+  { label: "Portal Sign In", href: "/auth/signin" },
 ];
 
 export const footerLinks: NavItem[] = [
   { label: "About", href: "/about" },
   { label: "Research", href: "/research" },
-  { label: "Innovation & Impact", href: "/innovation" },
+  { label: "Study", href: "/about" },
+  { label: "Platform", href: "/platform" },
+  { label: "Innovation", href: "/innovation" },
   { label: "Partnerships", href: "/partnerships" },
   { label: "Knowledge Hub", href: "/knowledge-hub" },
   { label: "Opportunities", href: "/opportunities" },
-  { label: "Platform", href: "/platform" },
   { label: "Contact", href: "/contact" },
 ];
